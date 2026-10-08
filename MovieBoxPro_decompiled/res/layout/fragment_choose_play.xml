@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:tag="layout/fragment_choose_play_0" android:background="@color/color_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/llResume" android:layout_width="500.0dip" android:layout_height="67.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="35.0dip" android:layout_marginBottom="12.0dip" style="@style/FocusSelectorStyle">
+            <ImageView android:duplicateParentState="true" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="32.0dip" android:layout_marginRight="15.0dip" android:src="@mipmap/ic_connitue_action" app:tint="@color/btn_text_color_black_selector" />
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/btn_text_color_black_selector" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CONTINUE" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/btn_text_color_light_selector" android:gravity="end" android:id="@id/tvContinue" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Double Click" android:layout_marginEnd="10.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/llRestart" android:layout_width="500.0dip" android:layout_height="67.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="35.0dip" android:layout_marginBottom="12.0dip" style="@style/FocusSelectorStyle">
+            <ImageView android:duplicateParentState="true" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="32.0dip" android:layout_marginRight="15.0dip" android:src="@mipmap/ic_replay_action" app:tint="@color/btn_text_color_black_selector" />
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/btn_text_color_black_selector" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="REPLAY" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/llDetail" android:layout_width="500.0dip" android:layout_height="67.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="35.0dip" android:layout_marginBottom="12.0dip" style="@style/FocusSelectorStyle">
+            <ImageView android:duplicateParentState="true" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="32.0dip" android:layout_marginRight="15.0dip" android:src="@mipmap/ic_detail_info" app:tint="@color/btn_text_color_black_selector" />
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/btn_text_color_black_selector" android:id="@id/tvDetail" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DETAIL" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/btn_text_color_light_selector" android:gravity="end" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Long Click" android:layout_marginEnd="10.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/llMark" android:layout_width="500.0dip" android:layout_height="67.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="35.0dip" android:layout_marginBottom="12.0dip" style="@style/FocusSelectorStyle">
+            <ImageView android:duplicateParentState="true" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="32.0dip" android:layout_marginRight="15.0dip" android:src="@mipmap/ic_white_watched" app:tint="@color/btn_text_color_black_selector" />
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/btn_text_color_black_selector" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MARK AS WATCHED" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/llDelete" android:layout_width="500.0dip" android:layout_height="67.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="35.0dip" android:layout_marginBottom="25.0dip" style="@style/FocusSelectorStyle">
+            <ImageView android:duplicateParentState="true" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="32.0dip" android:layout_marginRight="15.0dip" android:src="@mipmap/ic_delete_history" app:tint="@color/btn_text_color_black_selector" />
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/btn_text_color_black_selector" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="REMOVE" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

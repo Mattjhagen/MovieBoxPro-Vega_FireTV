@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_test_net_speed_0" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/flLoading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+    </FrameLayout>
+    <TextView android:textSize="32.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/tvTitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:text="Please Choose The Fastest Server" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip">
+        <com.owen.tvrecyclerview.widget.TvRecyclerView android:id="@id/rvTestOne" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.2" app:tv_layoutManager="GridLayoutManager" app:tv_numColumns="1" />
+        <com.owen.tvrecyclerview.widget.TvRecyclerView android:id="@id/rvLoadingOne" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_weight="1.0" app:tv_layoutManager="GridLayoutManager" app:tv_numColumns="1" />
+        <com.owen.tvrecyclerview.widget.TvRecyclerView android:id="@id/rvTestTwo" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.2" app:tv_layoutManager="GridLayoutManager" app:tv_numColumns="1" />
+        <com.owen.tvrecyclerview.widget.TvRecyclerView android:id="@id/rvLoadingTwo" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_weight="1.0" app:tv_layoutManager="GridLayoutManager" app:tv_numColumns="1" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/fragment_open_subtitle_0" android:background="@color/color_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/flLoading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="60.0dip" android:layout_height="60.0dip" android:indeterminateTint="@color/white" />
+    </FrameLayout>
+    <com.owen.tvrecyclerview.widget.TvRecyclerView android:id="@id/rvLanguage" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" app:tv_layoutManager="GridLayoutManager" app:tv_numColumns="1" />
+    <com.owen.tvrecyclerview.widget.TvRecyclerView android:id="@id/rvSubtitle" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" app:tv_layoutManager="GridLayoutManager" app:tv_numColumns="1" />
+</LinearLayout>

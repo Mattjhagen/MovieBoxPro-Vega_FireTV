@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:tag="layout/dialog_smart_download_setting_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="32.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="Smart Download" />
+    <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/flSmartDownload" android:layout_width="520.0dip" android:layout_height="67.0dip" android:layout_marginTop="30.0dip" style="@style/FocusFilterItemSelectorStyle">
+        <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_30alpha" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Smart Download" android:layout_marginStart="30.0dip" />
+        <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_70alpha" android:layout_gravity="end|center" android:id="@id/tvSmartDownload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="30.0dip" />
+    </FrameLayout>
+    <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/flQuality" android:layout_width="520.0dip" android:layout_height="67.0dip" android:layout_marginTop="30.0dip" style="@style/FocusFilterItemSelectorStyle">
+        <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_30alpha" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Resolution" android:layout_marginStart="30.0dip" />
+        <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_70alpha" android:layout_gravity="end|center" android:id="@id/tvQuality" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="30.0dip" />
+    </FrameLayout>
+    <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/flAutoDelete" android:layout_width="520.0dip" android:layout_height="67.0dip" android:layout_marginTop="30.0dip" style="@style/FocusFilterItemSelectorStyle">
+        <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_30alpha" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Auto-Deleted Watched" android:layout_marginStart="30.0dip" />
+        <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_70alpha" android:layout_gravity="end|center" android:id="@id/tvAutoDelete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="30.0dip" />
+    </FrameLayout>
+    <TextView android:textSize="20.0sp" android:textColor="@color/white_70alpha" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="The next episode will be downloaded automatically \nwhen watching a downloaded episode\n\nWon’t download when there is not enough space or not available." />
+</LinearLayout>

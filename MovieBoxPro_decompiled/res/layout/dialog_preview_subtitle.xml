@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llContainer" android:tag="layout/dialog_preview_subtitle_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.owen.tvrecyclerview.widget.TvRecyclerView android:id="@id/rvSubtitle" android:background="#ff292b2c" android:visibility="gone" android:layout_width="400.0dip" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:overScrollMode="never" app:tv_layoutManager="GridLayoutManager" app:tv_numColumns="1" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/llBtn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/tvTranscode" android:layout_width="200.0dip" android:layout_height="48.0dip" android:layout_marginTop="20.0dip" android:text="Transcode" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" style="@style/FocusSelectorStyle" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/tvOk" android:layout_width="200.0dip" android:layout_height="48.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="20.0dip" android:text="OK" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" style="@style/FocusSelectorStyle" />
+    </LinearLayout>
+</LinearLayout>

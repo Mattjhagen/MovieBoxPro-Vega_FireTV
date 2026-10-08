@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_30alpha" android:gravity="center_vertical" android:id="@id/tvName" android:background="@drawable/white_dark_selector" android:layout_width="300.0dip" android:layout_height="50.0dip" android:paddingStart="20.0dip" />
+    <ImageView android:id="@id/ivMove" android:padding="10.0dip" android:duplicateParentState="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@mipmap/ic_move_top" android:layout_marginStart="15.0dip" style="@style/FocusFilterItemSelectorStyle" />
+</LinearLayout>

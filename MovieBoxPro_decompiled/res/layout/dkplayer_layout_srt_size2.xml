@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="@dimen/control_bar_height2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/ll_bottom_srtsize" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/control_bar_height2">
+        <RelativeLayout android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/ll_srtsize_subtract" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip">
+            <TextView android:textSize="10.0dip" android:textColor="@color/srt_text" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Subtitle size" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/srt_text" android:id="@id/ll_srtsize_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:includeFontPadding="false" android:layout_centerInParent="true" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+        </RelativeLayout>
+        <ImageView android:id="@id/ll_srtsize_subtract" android:background="@drawable/sel_btn_play_back" android:focusable="true" android:nextFocusRight="@id/ll_srtsize_add" android:layout_width="45.0dip" android:layout_height="fill_parent" android:src="@mipmap/ic_subtract" android:scaleType="center" />
+        <ImageView android:id="@id/ll_srtsize_add" android:background="@drawable/sel_btn_play_back" android:focusable="true" android:nextFocusLeft="@id/ll_srtsize_subtract" android:nextFocusRight="@id/ll_srtsize_close" android:layout_width="45.0dip" android:layout_height="fill_parent" android:src="@mipmap/ic_add" android:scaleType="center" android:layout_toRightOf="@id/linearLayout" android:layout_alignTop="@id/ll_srtsize_subtract" />
+        <ImageView android:id="@id/ll_srtsize_close" android:background="@drawable/sel_btn_play_back" android:padding="12.0dip" android:focusable="true" android:nextFocusLeft="@id/ll_srtsize_add" android:layout_width="45.0dip" android:layout_height="fill_parent" android:src="@mipmap/ic_zoom_in" android:layout_centerVertical="true" android:layout_marginStart="20.0dip" android:layout_toEndOf="@id/ll_srtsize_add" />
+        <TextView android:textSize="10.0dip" android:textColor="@color/srt_text" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/linearLayout" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/danmaku_input_options_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/input_options_basic" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioGroup android:orientation="horizontal" android:id="@id/input_options_group_textsize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkedButton="@id/input_options_medium_textsize">
+            <RadioButton android:id="@id/input_options_small_textsize" android:background="@drawable/sel_btn_danmaku_input_options_small_textsize" style="@style/DanmakuInputOptionRadioButton" />
+            <RadioButton android:id="@id/input_options_medium_textsize" android:background="@drawable/sel_btn_danmaku_input_options_medium_textsize" style="@style/DanmakuInputOptionRadioButton" />
+        </RadioGroup>
+        <RadioGroup android:orientation="horizontal" android:id="@id/input_options_group_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:checkedButton="@id/input_options_rl_type">
+            <RadioButton android:id="@id/input_options_top_type" android:background="@drawable/sel_btn_danmaku_input_options_top_type" style="@style/DanmakuInputOptionRadioButton" />
+            <RadioButton android:id="@id/input_options_rl_type" android:background="@drawable/sel_btn_danmaku_input_options_rl_type" style="@style/DanmakuInputOptionRadioButton" />
+            <RadioButton android:id="@id/input_options_bottom_type" android:background="@drawable/sel_btn_danmaku_input_options_bottom_type" style="@style/DanmakuInputOptionRadioButton" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/input_options_more" android:background="@drawable/sel_item_background" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/input_options_color_current" android:background="#ffffffff" android:clickable="false" android:checked="true" style="@style/DanmakuInputOptionColorRadioButton" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/input_options_color_more_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:src="@mipmap/ic_danmaku_input_more_color" android:contentDescription="@null" />
+    </LinearLayout>
+    <RadioGroup android:orientation="horizontal" android:id="@id/input_options_color_group" android:layout_width="0.0dip" android:layout_height="wrap_content" android:checkedButton="@id/input_options_color_white">
+        <RadioButton android:id="@id/input_options_color_white" android:tag="\#ffffff" android:background="#ffffffff" style="@style/DanmakuInputOptionColorRadioButton" />
+        <RadioButton android:tag="\#e70012" android:background="#ffe70012" style="@style/DanmakuInputOptionColorRadioButton" />
+        <RadioButton android:tag="\#fef102" android:background="#fffef102" style="@style/DanmakuInputOptionColorRadioButton" />
+        <RadioButton android:tag="\#009843" android:background="#ff009843" style="@style/DanmakuInputOptionColorRadioButton" />
+        <RadioButton android:tag="\#00a0ea" android:background="#ff00a0ea" style="@style/DanmakuInputOptionColorRadioButton" />
+        <RadioButton android:tag="\#e2027f" android:background="#ffe2027f" style="@style/DanmakuInputOptionColorRadioButton" />
+        <RadioButton android:tag="\#90c320" android:background="#ff90c320" style="@style/DanmakuInputOptionColorRadioButton" />
+        <RadioButton android:tag="\#002e72" android:background="#ff002e72" style="@style/DanmakuInputOptionColorRadioButton" />
+        <RadioButton android:tag="\#f0ab2a" android:background="#fff0ab2a" style="@style/DanmakuInputOptionColorRadioButton" />
+        <RadioButton android:tag="\#683a7b" android:background="#ff683a7b" style="@style/DanmakuInputOptionColorRadioButton" />
+        <RadioButton android:tag="\#84c0cb" android:background="#ff84c0cb" style="@style/DanmakuInputOptionColorRadioButton" />
+        <RadioButton android:tag="\#927939" android:background="#ff927939" style="@style/DanmakuInputOptionColorRadioButton" />
+    </RadioGroup>
+</LinearLayout>

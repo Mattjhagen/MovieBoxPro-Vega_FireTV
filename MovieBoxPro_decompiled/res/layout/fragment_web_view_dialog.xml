@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/fragment_web_view_dialog_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <WebView android:id="@id/webView" android:background="@color/color_main" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:id="@id/progressBar" android:layout_width="fill_parent" android:layout_height="3.0dip" android:indeterminateTint="@color/color_main_yellow" style="?android:progressBarStyleHorizontal" />
+</FrameLayout>

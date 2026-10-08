@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/fragment_login_0" android:background="@color/color_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.7">
+        <ImageView android:id="@id/imageView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="85.0dip" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" app:layout_constraintDimensionRatio="621:246" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="If you have not installed MovieBox Pro on your mobile，please download app first." app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/imageView" />
+        <ImageView android:id="@id/imageView2" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginTop="20.0dip" android:src="@mipmap/ic_phone" app:layout_constraintEnd_toStartOf="@id/textView2" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/textView" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="https://www.movieboxpro.app" android:layout_marginStart="5.0dip" app:layout_constraintBottom_toBottomOf="@id/imageView2" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/imageView2" app:layout_constraintTop_toTopOf="@id/imageView2" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white_70alpha" android:id="@id/tvVersionName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/textView2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout android:orientation="vertical" android:background="#ff212121" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.3">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip">
+                <com.movieboxpro.android.view.widget.SquareImageView android:id="@id/ivQrCode" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:indeterminateTint="@color/white" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/btn_text_color_black_selector" android:gravity="center" android:layout_gravity="center" android:id="@id/tvTryAgain" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="40.0dip" android:text="Refresh" style="@style/FocusSelectorStyle" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

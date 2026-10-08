@@ -1,0 +1,22 @@
+# Build outputs
+*.apk.bak
+dist/
+build/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Apktool framework
+framework/
+
+# Temporary files
+*.tmp
+*.log

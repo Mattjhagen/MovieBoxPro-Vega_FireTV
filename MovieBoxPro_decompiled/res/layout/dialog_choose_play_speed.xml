@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/dialog_choose_play_speed_0" android:background="@color/color_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white_30alpha" android:gravity="center" android:id="@id/tvSpeed05" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="0.5x" style="@style/FocusFilterItemSelectorStyle" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white_30alpha" android:gravity="center" android:id="@id/tvSpeed1" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="1.0x" style="@style/FocusFilterItemSelectorStyle" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white_30alpha" android:gravity="center" android:id="@id/tvSpeed125" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="1.25x" style="@style/FocusFilterItemSelectorStyle" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white_30alpha" android:gravity="center" android:id="@id/tvSpeed15" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="1.5x" style="@style/FocusFilterItemSelectorStyle" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white_30alpha" android:gravity="center" android:id="@id/tvSpeed2" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="2.0x" style="@style/FocusFilterItemSelectorStyle" />
+</LinearLayout>

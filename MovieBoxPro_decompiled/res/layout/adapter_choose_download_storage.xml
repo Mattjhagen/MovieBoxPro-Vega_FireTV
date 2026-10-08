@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/FocusFilterItemSelectorStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tvName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:maxLines="1" android:layout_marginStart="20.0dip" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/tvSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="15.0dip" android:layout_marginStart="20.0dip" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/ivSelect" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@mipmap/ic_cb_checked" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+</LinearLayout>

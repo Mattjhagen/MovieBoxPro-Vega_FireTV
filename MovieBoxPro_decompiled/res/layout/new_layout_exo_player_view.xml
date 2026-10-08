@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_video_box" android:background="@android:color/black" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.movieboxpro.android.exo.ExoVideoView android:id="@id/video_view" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/play_next_episode_layout" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llContinue" android:background="@drawable/alpha_bg_shape" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tvContinue" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/ivSkipImage" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:src="@mipmap/ic_restart_hint" android:layout_marginStart="10.0dip" />
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tvSkipText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RESTART." android:layout_marginStart="10.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/tvQualityHint" android:background="@drawable/bg_player_left_hint" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/llSubtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+            <com.avery.subtitle.widget.SimpleSubtitleView2 android:textStyle="bold" android:textColor="@color/srt_text" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/simpleSubtitleView" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+            <View android:id="@id/subtitleLine" android:background="@drawable/subtitle_position_line_shape" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <include layout="@layout/new_layout_bottom_bar2" />
+        <LinearLayout android:orientation="vertical" android:id="@id/llSeek" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/tvSeekBarTop" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <androidx.appcompat.widget.AppCompatSeekBar android:id="@id/playerSeekBar" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:focusable="true" android:nextFocusUp="@id/tvSeekBarTop" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginBottom="30.0dip" android:progressDrawable="@drawable/player_progress_shape" android:thumb="@drawable/sel_btn_seekball" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" android:elevation="5.0dip" />
+            <View android:id="@id/tvSeekBarBottom" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/iv_thumb" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@android:color/black" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:gravity="center" android:id="@id/pb_loading" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="50.0dip" android:layout_height="50.0dip" android:indeterminateOnly="true" android:indeterminateBehavior="repeat" android:indeterminateTint="@color/white" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/white30_transparent" android:id="@id/tvTcpSpeed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_player_lock" android:background="@drawable/sel_btn_lock" android:padding="10.0dip" android:focusable="false" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/sel_player_lock" android:selectAllOnFocus="true" />
+    <include layout="@layout/layout_skip_tip" />
+    <ImageView android:layout_gravity="center" android:id="@id/iv_play_circle" android:padding="10.0dip" android:focusable="false" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@mipmap/ic_video_play" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/fl_reload_layout" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Failed to load, please try to switch resolution or player" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_reload" android:padding="10.0dip" android:focusable="true" android:visibility="gone" android:layout_width="150.0dip" android:layout_height="40.0dip" android:text="Try Again" style="@style/FocusSelectorStyle" />
+    </FrameLayout>
+    <TextView android:textSize="18.0sp" android:textColor="@color/white_30alpha" android:id="@id/tvVideoTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginStart="16.0dip" />
+    <LinearLayout android:layout_gravity="end|center" android:orientation="vertical" android:id="@id/rlSubtitlePos" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="20.0dip">
+        <ImageView android:id="@id/ivSubtitleUp" android:background="@drawable/sel_btn_play_back" android:padding="10.0dip" android:focusable="true" android:nextFocusDown="@id/ivSubtitleDown" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@mipmap/ic_subtitle_up" />
+        <ImageView android:id="@id/ivSubtitleDown" android:background="@drawable/sel_btn_play_back" android:padding="10.0dip" android:focusable="true" android:nextFocusUp="@id/ivSubtitleUp" android:nextFocusDown="@id/ivSubtitlePosClose" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@mipmap/ic_subtitle_down" />
+        <ImageView android:id="@id/ivSubtitlePosClose" android:background="@drawable/sel_btn_play_back" android:padding="12.0dip" android:focusable="true" android:nextFocusUp="@id/ivSubtitleDown" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@mipmap/ic_zoom_in" />
+    </LinearLayout>
+</FrameLayout>

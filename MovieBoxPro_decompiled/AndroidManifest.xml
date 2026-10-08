@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="35" android:compileSdkVersionCodename="15" package="com.movieboxpro.androidtv" platformBuildVersionCode="35" platformBuildVersionName="15">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-feature android:name="android.software.leanback" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.android.providers.tv.permission.WRITE_EPG_DATA"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <permission android:name="com.movieboxpro.androidtv.CountlyPush.BROADCAST_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.android.providers.tv.permission.READ_EPG_DATA"/>
+    <permission android:name="com.movieboxpro.androidtv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.movieboxpro.androidtv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:banner="@mipmap/tv_logo" android:extractNativeLibs="true" android:hardwareAccelerated="true" android:icon="@mipmap/ic_logo" android:label="MovieBoxPro" android:largeHeap="true" android:logo="@mipmap/ic_logo" android:name="com.movieboxpro.android.app.App" android:persistent="true" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_logo_round" android:supportsRtl="false" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+        <activity android:exported="true" android:launchMode="standard" android:name="com.movieboxpro.android.view.activity.MainActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="com.movieboxpro.android.movieboxprotxchannels" android:pathPrefix="/startapp" android:scheme="movieboxprotxchannels"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.movieboxpro.android.view.activity.ActorDetailActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.movieboxpro.android.view.activity.ActorListActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.movieboxpro.android.tv.list.UserMovieListActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.movieboxpro.android.view.activity.MoreWatchingActivity" android:screenOrientation="landscape"/>
+        <activity android:launchMode="singleTop" android:name="com.movieboxpro.android.view.activity.SuperChildModeActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.movieboxpro.android.view.activity.WatchPlanActivity" android:screenOrientation="landscape"/>
+        <activity android:launchMode="singleTop" android:name="com.movieboxpro.android.view.activity.DownloadActivity" android:screenOrientation="landscape"/>
+        <activity android:launchMode="singleTop" android:name="com.movieboxpro.android.tv.ScreenManageActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.movieboxpro.android.view.activity.DownloadedTvActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.movieboxpro.android.view.activity.ChooseTvDownloadActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.movieboxpro.android.view.activity.DownloadingActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.movieboxpro.android.view.activity.videoplayer.TransCodeSubtitleActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.movieboxpro.android.tv.MorePlayListActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.movieboxpro.android.tv.MoreTvActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.movieboxpro.android.tv.MoreMovieActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.movieboxpro.android.tv.HistoryActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.movieboxpro.android.tv.search.SearchVideoActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.movieboxpro.android.tv.LoginActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.movieboxpro.android.tv.list.PlayListDetailActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.movieboxpro.android.tv.tv.TvDetailActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.movieboxpro.android.tv.movie.MovieDetailActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.movieboxpro.android.tv.MoreCompilationsActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.movieboxpro.android.tv.CompilationsDetailListActivity" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="true" android:launchMode="singleTask" android:name="com.movieboxpro.android.player.VideoPlayer" android:screenOrientation="landscape" android:supportsPictureInPicture="true" android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="true" android:launchMode="singleTask" android:name="com.movieboxpro.android.player.VideoPlayerActivity" android:screenOrientation="landscape" android:supportsPictureInPicture="true" android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.movieboxpro.android.view.activity.videoplayer.TranslateSubtitleActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="true" android:name="com.movieboxpro.android.tvchannel.TvChannelReceiverActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="com.movieboxpro.android.movieboxprotxchannels" android:pathPrefix="/playvideo" android:scheme="movieboxprotxchannels"/>
+            </intent-filter>
+        </activity>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME" android:value="com.movieboxpro.android.view.widget.CastOptionsProvider"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="5bf51887f1f5561ead00007b"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="web_tv"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.movieboxpro.android.view.activity.SplashActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:largeHeap="true" android:name="com.movieboxpro.android.service.FileDownloadService"/>
+        <service android:exported="true" android:name="com.movieboxpro.android.tvchannel.PreviewVideoInputService" android:permission="android.permission.BIND_TV_INPUT">
+            <intent-filter>
+                <action android:name="android.media.tv.TvInputService"/>
+            </intent-filter>
+            <meta-data android:name="android.media.tv.input" android:resource="@xml/previewvideoinputservice"/>
+        </service>
+        <service android:exported="true" android:name="com.movieboxpro.android.service.DealWatchNextService"/>
+        <service android:exported="true" android:name="com.movieboxpro.android.service.CreateChannelService"/>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.movieboxpro.android.service.MyDownloadService">
+            <intent-filter>
+                <action android:name="androidx.media3.exoplayer.downloadService.action.RESTART"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="androidx.media3.exoplayer.scheduler.PlatformScheduler$PlatformSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.movieboxpro.android.service.MemoryMonitorService"/>
+        <service android:name="com.movieboxpro.android.service.DownloadService"/>
+        <service android:name="com.movieboxpro.android.service.FFmpegDownloadService"/>
+        <provider android:authorities="com.movieboxpro.androidtv.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/logo"/>
+        <meta-data android:name="design_width_in_dp" android:value="960"/>
+        <meta-data android:name="design_height_in_dp" android:value="540"/>
+        <provider android:authorities="com.movieboxpro.androidtv.com.liulishuo.okdownload" android:exported="false" android:name="com.liulishuo.okdownload.OkDownloadProvider"/>
+        <receiver android:exported="false" android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver"/>
+        <service android:exported="false" android:name="com.google.android.gms.cast.framework.media.MediaNotificationService"/>
+        <service android:exported="false" android:name="com.google.android.gms.cast.framework.ReconnectionService"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:clearTaskOnLaunch="true" android:name="com.journeyapps.barcodescanner.CaptureActivity" android:screenOrientation="sensorLandscape" android:stateNotNeeded="true" android:theme="@style/zxing_CaptureTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.movieboxpro.androidtv.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="ly.count.android.sdk.messaging.CountlyPushActivity" android:noHistory="true" android:taskAffinity=".CountlyPushActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <uses-library android:name="android.test.runner"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <provider android:authorities="com.movieboxpro.androidtv.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="okhttp3.internal.platform.PlatformInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <provider android:authorities="com.movieboxpro.androidtv.autosize-init-provider" android:exported="false" android:multiprocess="true" android:name="me.jessyan.autosize.InitProvider"/>
+    </application>
+</manifest>

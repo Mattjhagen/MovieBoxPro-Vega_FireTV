@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:paddingTop="@dimen/status_bar_height" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/fullscreen_top_bar" android:background="@color/bg_video_view" android:layout_width="fill_parent" android:layout_height="@dimen/control_bar_height2">
+        <ImageView android:id="@id/iv_back" android:background="@drawable/sel_item_background" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_return_back" />
+        <com.dl7.player.widgets.MarqueeTextView android:textSize="16.0sp" android:textColor="@android:color/white" android:ellipsize="marquee" android:id="@id/tv_title" android:focusable="true" android:focusableInTouchMode="true" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="15.0dip" android:text="标题" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" />
+        <androidx.mediarouter.app.MediaRouteButton android:id="@id/media_route_button" android:padding="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="@dimen/settings_btn_width" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:mediaRouteTypes="user" />
+        <ImageView android:gravity="center" android:id="@id/tv_meidaTrack" android:padding="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="@dimen/settings_btn_width" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:src="@mipmap/ic_track" />
+        <ImageView android:gravity="center" android:id="@id/tv_srtcelsect" android:padding="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="@dimen/settings_btn_width" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:src="@mipmap/ic_cc" />
+        <ProgressBar android:id="@id/pb_battery" android:visibility="gone" android:layout_marginRight="10.0dip" android:max="100" style="@style/ProgressBarBattery" />
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/tv_system_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+        <ImageView android:id="@id/iv_screenshot" android:background="@drawable/sel_item_background" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_video_screenshot" />
+        <ImageView android:gravity="center" android:id="@id/tv_settings" android:padding="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="@dimen/settings_btn_width" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:src="@mipmap/ic_st" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/window_top_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <ImageView android:id="@id/iv_back_window" android:background="@drawable/sel_item_background" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_return_back" />
+    </FrameLayout>
+</merge>

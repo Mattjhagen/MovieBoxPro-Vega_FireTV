@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusable="true" android:clickable="true" android:layout_width="76.0dip" android:layout_height="76.0dip" style="@style/FocusDialogItemSelectorStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/loading" android:visibility="visible" android:layout_width="27.0dip" android:layout_height="27.0dip" android:indeterminateTint="@color/white" />
+    <ImageView android:layout_gravity="center" android:id="@id/ivRetry" android:visibility="gone" android:layout_width="27.0dip" android:layout_height="27.0dip" android:src="@mipmap/ic_test_speed_refresh" />
+</FrameLayout>

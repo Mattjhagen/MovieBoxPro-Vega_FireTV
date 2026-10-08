@@ -1,0 +1,71 @@
+.class Lcom/avery/subtitle/SubtitleLoader$1$2;
+.super Ljava/lang/Object;
+.source "SubtitleLoader.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/avery/subtitle/SubtitleLoader$1;->run()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/avery/subtitle/SubtitleLoader$1;
+
+.field final synthetic val$e:Ljava/lang/Exception;
+
+
+# direct methods
+.method constructor <init>(Lcom/avery/subtitle/SubtitleLoader$1;Ljava/lang/Exception;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            null,
+            null
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .line 86
+    iput-object p1, p0, Lcom/avery/subtitle/SubtitleLoader$1$2;->this$0:Lcom/avery/subtitle/SubtitleLoader$1;
+
+    iput-object p2, p0, Lcom/avery/subtitle/SubtitleLoader$1$2;->val$e:Ljava/lang/Exception;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 2
+
+    .line 89
+    iget-object v0, p0, Lcom/avery/subtitle/SubtitleLoader$1$2;->this$0:Lcom/avery/subtitle/SubtitleLoader$1;
+
+    iget-object v0, v0, Lcom/avery/subtitle/SubtitleLoader$1;->val$callback:Lcom/avery/subtitle/SubtitleLoader$Callback;
+
+    iget-object v1, p0, Lcom/avery/subtitle/SubtitleLoader$1$2;->val$e:Ljava/lang/Exception;
+
+    invoke-interface {v0, v1}, Lcom/avery/subtitle/SubtitleLoader$Callback;->onError(Ljava/lang/Exception;)V
+
+    return-void
+.end method

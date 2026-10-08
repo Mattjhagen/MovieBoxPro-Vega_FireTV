@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linearLayout" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="@color/white30_transparent" android:id="@id/tvLanguage" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <FrameLayout android:id="@id/flUpArrow" android:duplicateParentState="true" android:layout_width="40.0dip" android:layout_height="40.0dip" style="@style/FocusSelectorStyle">
+        <ImageView android:layout_gravity="center" android:duplicateParentState="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/ic_up_arrow" app:tint="@color/btn_text_color_black_selector" />
+    </FrameLayout>
+</LinearLayout>

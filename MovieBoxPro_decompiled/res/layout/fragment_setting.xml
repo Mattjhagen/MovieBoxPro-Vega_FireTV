@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/fragment_setting_0" android:background="@color/color_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.owen.tvrecyclerview.widget.TvRecyclerView android:orientation="vertical" android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" app:tv_layoutManager="GridLayoutManager" app:tv_numColumns="1" />
+    <androidx.core.widget.NestedScrollView android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:id="@id/llTestSpeed" android:layout_width="500.0dip" android:layout_height="67.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="35.0dip" android:layout_marginBottom="10.0dip" style="@style/FocusFilterItemSelectorStyle">
+                <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="32.0dip" android:layout_marginRight="15.0dip" android:src="@mipmap/ic_test_speed" />
+                <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_30alpha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Server Speed Test" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/llSwitchLanguage" android:layout_width="500.0dip" android:layout_height="67.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="35.0dip" android:layout_marginBottom="10.0dip" style="@style/FocusFilterItemSelectorStyle">
+                <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="32.0dip" android:layout_marginRight="15.0dip" android:src="@mipmap/ic_switch_language" />
+                <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_30alpha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Language" />
+                <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_70alpha" android:gravity="end" android:id="@id/tvLanguage" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="32.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/llChildMode" android:layout_width="500.0dip" android:layout_height="67.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="35.0dip" android:layout_marginBottom="10.0dip" style="@style/FocusFilterItemSelectorStyle">
+                <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="32.0dip" android:layout_marginRight="15.0dip" android:src="@mipmap/ic_child_mode" />
+                <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_30alpha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Child Mode" />
+                <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_70alpha" android:gravity="end" android:id="@id/tvChildMode" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="32.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/llRememberOrg" android:layout_width="500.0dip" android:layout_height="80.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="35.0dip" android:layout_marginBottom="10.0dip" style="@style/FocusFilterItemSelectorStyle">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="32.0dip">
+                    <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_30alpha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Remember selected ORG quality" />
+                    <TextView android:textSize="18.0sp" android:textColor="@color/white_70alpha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ORG quality may play stuck,no image" />
+                </LinearLayout>
+                <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_70alpha" android:gravity="end" android:id="@id/tvRememberOrg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="32.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/llHideMovieList" android:layout_width="500.0dip" android:layout_height="80.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="35.0dip" android:layout_marginBottom="10.0dip" style="@style/FocusFilterItemSelectorStyle">
+                <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_30alpha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hide MovieList" android:layout_marginStart="32.0dip" />
+                <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_70alpha" android:gravity="end" android:id="@id/tvHideMovieList" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="32.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/llSmartDownload" android:layout_width="500.0dip" android:layout_height="80.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="35.0dip" android:layout_marginBottom="10.0dip" style="@style/FocusFilterItemSelectorStyle">
+                <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_30alpha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Smart Download" android:layout_marginStart="32.0dip" />
+                <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_70alpha" android:gravity="end" android:id="@id/tvSmartDownload" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="32.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/llDownloadLocation" android:layout_width="500.0dip" android:layout_height="80.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="35.0dip" android:layout_marginBottom="10.0dip" style="@style/FocusFilterItemSelectorStyle">
+                <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_30alpha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Download location" android:layout_marginStart="32.0dip" />
+                <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_70alpha" android:gravity="end" android:id="@id/tvDownloadLocation" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="32.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/llAutoPlayNext" android:layout_width="500.0dip" android:layout_height="80.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="35.0dip" android:layout_marginBottom="10.0dip" style="@style/FocusFilterItemSelectorStyle">
+                <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_30alpha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Auto Play Next Episode" android:layout_marginStart="32.0dip" />
+                <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_70alpha" android:gravity="end" android:id="@id/tvPlayNext" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="32.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/llAudioDelay" android:layout_width="500.0dip" android:layout_height="80.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="35.0dip" android:layout_marginBottom="10.0dip" style="@style/FocusFilterItemSelectorStyle">
+                <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_30alpha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Audio Delay" android:layout_marginStart="32.0dip" />
+                <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_70alpha" android:gravity="end" android:id="@id/tvAudioDelay" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="32.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

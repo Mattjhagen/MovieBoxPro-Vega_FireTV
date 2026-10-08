@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="right" android:id="@id/fl_cc_select" android:background="@color/bg_video_view" android:layout_width="300.0dip" android:layout_height="fill_parent" android:translationX="300.0dip">
+        <RelativeLayout android:layout_gravity="right" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/iv_cc_extracc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:src="@mipmap/ic_more_cc" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/iv_cc_extracc">
+                <ListView android:id="@id/lv_cc_country" android:scrollbars="none" android:layout_width="0.0dip" android:layout_height="fill_parent" android:divider="@null" android:layout_weight="1.0" android:fastScrollEnabled="false" />
+                <ListView android:id="@id/lv_cc_quality" android:scrollbars="none" android:layout_width="0.0dip" android:layout_height="fill_parent" android:divider="@null" android:layout_weight="1.0" android:fastScrollEnabled="false" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</merge>

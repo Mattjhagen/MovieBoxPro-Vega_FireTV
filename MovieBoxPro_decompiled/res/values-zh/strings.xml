@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MovieBoxPro</string>
+    <string name="cancel">取消</string>
+    <string name="info">提示</string>
+</resources>

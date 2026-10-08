@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="right" android:id="@id/fl_setting_controller" android:background="@color/bg_video_view" android:visibility="gone" android:layout_width="250.0dip" android:layout_height="fill_parent">
+        <TextView android:textSize="17.0sp" android:textColor="@color/background_gray_light" android:id="@id/aspect_ratio_name" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="@dimen/danmaku_input_options_height" android:text="Play speed" />
+        <RadioGroup android:gravity="left" android:layout_gravity="right" android:orientation="horizontal" android:id="@id/aspect_ratio_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:checkedButton="@id/aspect_fit_parent" android:layout_below="@id/aspect_ratio_name">
+            <RadioButton android:textSize="18.0sp" android:textColor="@color/speed_text_color" android:id="@id/aspect_fit_parent" android:checked="true" android:text="Adapt" style="@style/AspectRatioButton" />
+            <RadioButton android:textSize="18.0sp" android:textColor="@color/speed_text_color" android:id="@id/aspect_fit_screen" android:text="Stretch" style="@style/AspectRatioButton" />
+            <RadioButton android:textSize="18.0sp" android:textColor="@color/speed_text_color" android:text="filling" style="@style/AspectRatioButton" />
+            <RadioButton android:textSize="18.0sp" android:textColor="@color/speed_text_color" android:id="@id/aspect_16_and_9" android:text="16:9" style="@style/AspectRatioButton" />
+        </RadioGroup>
+        <View android:id="@id/aspect_ratio_line" android:background="@color/seek_background" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/aspect_ratio_group" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/background_gray_light" android:id="@id/speed_ratio_name" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Picture size" android:layout_below="@id/aspect_ratio_line" />
+        <RadioGroup android:gravity="left" android:layout_gravity="right" android:orientation="horizontal" android:id="@id/speed_ratio_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_below="@id/speed_ratio_name">
+            <RadioButton android:textSize="14.0sp" android:textColor="@color/speed_text_color" android:id="@id/speed_0_5" android:text="X 0.5" style="@style/AspectRatioButton" />
+            <RadioButton android:textSize="14.0sp" android:textColor="@color/speed_text_color" android:id="@id/speed_1" android:checked="true" android:text="X 1" style="@style/AspectRatioButton" />
+            <RadioButton android:textSize="14.0sp" android:textColor="@color/speed_text_color" android:id="@id/speed_1_25" android:text="X 1.25" style="@style/AspectRatioButton" />
+            <RadioButton android:textSize="14.0sp" android:textColor="@color/speed_text_color" android:id="@id/speed_1_5" android:text="X 1.5" style="@style/AspectRatioButton" />
+            <RadioButton android:textSize="14.0sp" android:textColor="@color/speed_text_color" android:id="@id/speed_2" android:text="X 2" style="@style/AspectRatioButton" />
+        </RadioGroup>
+        <View android:id="@id/speed_ratio_line" android:background="@color/seek_background" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/speed_ratio_group" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/background_gray_light" android:id="@id/medcode_ratio_name" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Decoding" android:layout_below="@id/speed_ratio_line" />
+        <RadioGroup android:gravity="left" android:layout_gravity="right" android:orientation="horizontal" android:id="@id/medcode_ratio_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_below="@id/medcode_ratio_name">
+            <RadioButton android:textSize="18.0sp" android:textColor="@color/speed_text_color" android:id="@id/medcode_open" android:checked="true" android:text="Hardware" style="@style/AspectRatioButton" />
+            <RadioButton android:textSize="18.0sp" android:textColor="@color/speed_text_color" android:id="@id/medcode_close" android:text="Software" style="@style/AspectRatioButton" />
+        </RadioGroup>
+    </RelativeLayout>
+</merge>

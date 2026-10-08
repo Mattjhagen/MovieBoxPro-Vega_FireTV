@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="150.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <de.hdodenhof.circleimageview.CircleImageView android:id="@id/play_continue_poster" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="150.0dip" app:civ_border_color="#ffffdd45" app:civ_border_width="2.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" app:layout_constraintLeft_toLeftOf="@id/play_continue_poster" app:layout_constraintRight_toRightOf="@id/play_continue_poster" app:layout_constraintTop_toBottomOf="@id/play_continue_poster" style="@style/VideoTitleStyle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="#ff888889" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvDeviceName" android:background="@drawable/device_name_border_shape" android:layout_width="0.0dip" android:layout_height="77.0dip" android:maxLines="1" android:layout_weight="1.0" android:paddingStart="22.0dip" android:paddingEnd="22.0dip" />
+    <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_30alpha" android:gravity="center" android:duplicateParentState="true" android:layout_width="145.0dip" android:layout_height="77.0dip" android:text="Stop" android:layout_marginStart="35.0dip" style="@style/FocusDialogItemSelectorStyle" />
+</LinearLayout>

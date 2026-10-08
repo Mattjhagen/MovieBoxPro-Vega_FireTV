@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/FocusFilterItemSelectorStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/tvCodeName" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/ivSelected" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@mipmap/ic_choose_select" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+</LinearLayout>

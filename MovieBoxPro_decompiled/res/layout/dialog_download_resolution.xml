@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/dialog_download_resolution_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.owen.tvrecyclerview.widget.TvRecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" app:tv_layoutManager="GridLayoutManager" app:tv_numColumns="1" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/white_70alpha" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="Automatically downloaded according to the priorities" />
+</LinearLayout>

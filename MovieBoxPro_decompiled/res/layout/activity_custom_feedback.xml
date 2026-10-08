@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/color_main_back" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/white_alpha" android:gravity="center" android:id="@id/tvCancel" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Cancel" android:paddingStart="15.0dip" android:paddingEnd="15.0dip" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Feedback" android:layout_centerInParent="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/color_main_yellow" android:gravity="center" android:id="@id/tvSend" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Send" android:paddingStart="15.0dip" android:paddingEnd="15.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/white_alpha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="Input you problems" android:layout_marginStart="15.0dip" />
+    <EditText android:textColor="@color/white_alpha" android:gravity="start|center|top" android:id="@id/editText" android:background="@drawable/black_corner_shape" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="15.0dip" />
+</LinearLayout>

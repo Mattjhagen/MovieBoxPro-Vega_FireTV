@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/viewBg" android:background="@drawable/subtitle_color_selector" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="1:1" app:layout_constraintTop_toTopOf="parent" />
+    <View android:id="@id/viewColor" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="5.0dip" app:layout_constraintDimensionRatio="1:1" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/ivSelect" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="5.0dip" android:src="@mipmap/ic_test_speed_selected" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/white_50alpha" android:id="@id/tvAlpha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/viewBg" />
+</androidx.constraintlayout.widget.ConstraintLayout>

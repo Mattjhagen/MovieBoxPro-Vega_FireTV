@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_code_login_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0dip">
+        <ImageView android:layout_width="81.0dip" android:layout_height="60.0dip" android:src="@mipmap/code_login_img" />
+        <TextView android:textSize="24.0sp" android:textColor="@color/white_87alpha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enter the code below on your phone\nto complete the login." android:layout_marginStart="24.0dip" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:indeterminateTint="@color/white" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tvTryAgain" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="40.0dip" android:text="Refresh" style="@style/FocusSelectorStyle" />
+        <TextView android:textSize="56.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tvCode" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="560.0dip" android:layout_height="177.0dip" android:src="@drawable/code_login_hint_img" />
+</LinearLayout>

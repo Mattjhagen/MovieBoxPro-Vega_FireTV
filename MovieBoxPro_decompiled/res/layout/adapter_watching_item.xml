@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llWatching" android:background="@color/transparent" android:focusable="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+        <View android:id="@id/view" android:background="@drawable/green_circle_shape" android:layout_width="4.0dip" android:layout_height="4.0dip" android:layout_marginStart="14.0dip" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/white_87alpha" android:layout_gravity="center_vertical" android:id="@id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="WATCHING" android:includeFontPadding="false" android:layout_marginStart="5.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white_50alpha" android:id="@id/tvWatchingCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="5.0dip" />
+    </LinearLayout>
+    <com.owen.tvrecyclerview.widget.TvRecyclerView android:id="@id/recyclerView" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llWaiting" android:background="@color/transparent" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <View android:background="@drawable/yellow_circle_shape" android:layout_width="4.0dip" android:layout_height="4.0dip" android:layout_marginStart="14.0dip" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/white_87alpha" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="WAITING" android:includeFontPadding="false" android:layout_marginStart="5.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white_50alpha" android:id="@id/tvWaitingCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

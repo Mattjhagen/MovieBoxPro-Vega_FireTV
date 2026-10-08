@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/dialog_choose_download_location_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.owen.tvrecyclerview.widget.TvRecyclerView android:layout_gravity="center" android:orientation="vertical" android:id="@id/recyclerView" android:layout_width="400.0dip" android:layout_height="wrap_content" app:tv_layoutManager="GridLayoutManager" app:tv_numColumns="1" />
+</FrameLayout>

@@ -1,0 +1,34 @@
+var STRINGS = {};
+
+STRINGS.WIFI_TRANS_TITLE = 'Upload Subtitles';
+STRINGS.FILES_ON_DEVICE = 'Files on your device';
+STRINGS.FILENAME = 'Name';
+STRINGS.FILE_SIZE = 'Size';
+STRINGS.FILE_OPER = 'Operating';
+STRINGS.CONFIRM_DELETE_BOOK = 'Delete subtitles or not？';
+STRINGS.DOWNLOAD_FILE = 'Download files';
+STRINGS.DELETE_FILE = 'Delete files';
+STRINGS.USE_ONE_BROWSER = 'Unable to upload file. Do not use multiple browser Windows to upload at the same time.';
+STRINGS.UPLOAD_FAILED = 'Upload failed, please reopen WiFi APP installation service and refresh this page to upload again.';
+STRINGS.UNSUPPORTED_FILE_TYPE = 'Select the Subtitle file.';
+STRINGS.FILE_IN_QUEUE = 'The file is already in the upload queue.';
+STRINGS.FILE_EXISTS = 'The file already exists, please delete it first and then upload it again.';
+STRINGS.YOU_CHOOSE = 'You select the';
+STRINGS.CHOSEN_FILE_COUNT = 'file, can only upload';
+STRINGS.VALID_CHOSEN_FILE_COUNT = 'file。\nPlease select Subtitle file. The file name cannot be repeated.';
+STRINGS.CANCEL = 'Cancel';
+STRINGS.SELECT_YOUR_FILES = 'Please select the file you want to upload to MovieBox';
+STRINGS.SUPPORTED_FILE_TYPES = 'Support the Subtitle';
+STRINGS.CANNOT_CONNECT_SERVER = 'Unable to connect to WiFi transfer server, please reopen WiFi APP installation service and upload again after refreshing this page.';
+STRINGS.DRAG_TO_HERE = "Drag and drop to upload here";
+STRINGS.SELECT_BUTTON_LABLE1 = "Select the file";
+STRINGS.SELECT_BUTTON_LABLE2 = "Multiple files can be uploaded simultaneously";
+STRINGS.SELECT_BUTTON_LABLE = "Select the file";
+STRINGS.WIFI_AVAILABLE = "WiFi connection enabled";
+
+STRINGS.FONT_WIFI_TRANS_TITLE = 'WiFi 传字体';
+STRINGS.FONT_CONFIRM_DELETE_BOOK = '是否删除字体？';
+STRINGS.FONT_UNSUPPORTED_FILE_TYPE = '请选择您要上传的TTF或OTF字体文件。';
+STRINGS.FONT_SUPPORTED_FILE_TYPES = '支持TTF和OTF';
+STRINGS.FONT_VALID_CHOSEN_FILE_COUNT = '个文件。\n请选择TTF或OTF文件，文件名不能重复。';
+STRINGS.FONT_FILE_EXISTS = 'File already exists。';

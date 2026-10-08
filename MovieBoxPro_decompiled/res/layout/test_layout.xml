@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/imageView" android:background="@color/white" android:layout_width="150.0dip" android:layout_height="150.0dip" app:layout_constraintEnd_toStartOf="@id/imageView2" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toStartOf="parent" />
+    <ImageView android:id="@id/imageView2" android:background="@color/background_gray_light" android:layout_width="0.0dip" android:layout_height="150.0dip" android:layout_weight="1.0" app:layout_constraintEnd_toStartOf="@id/imageView3" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toEndOf="@id/imageView" />
+    <ImageView android:id="@id/imageView3" android:background="@color/white" android:layout_width="150.0dip" android:layout_height="150.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toEndOf="@id/imageView2" />
+</LinearLayout>

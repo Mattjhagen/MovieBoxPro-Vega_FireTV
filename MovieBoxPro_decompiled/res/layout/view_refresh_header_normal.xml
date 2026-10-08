@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_normal_refresh_header_arrow" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@mipmap/refresh_head_arrow" />
+        <ImageView android:id="@id/iv_normal_refresh_header_chrysanthemum" android:visibility="invisible" android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/bga_refresh_loding" />
+    </FrameLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#ff777777" android:id="@id/tv_normal_refresh_header_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="下拉刷新" />
+</LinearLayout>

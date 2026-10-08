@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/dialog_choose_player_0" android:background="@color/color_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/llPlay" android:layout_width="477.0dip" android:layout_height="67.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="35.0dip" android:layout_marginBottom="25.0dip" style="@style/FocusFilterItemSelectorStyle">
+            <ImageView android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="32.0dip" android:layout_marginRight="15.0dip" android:src="@mipmap/ic_replay_action" />
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_30alpha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Play with MovieBoxPro Player" android:layout_marginStart="30.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/llOther" android:layout_width="477.0dip" android:layout_height="67.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="35.0dip" android:layout_marginBottom="15.0dip" style="@style/FocusFilterItemSelectorStyle">
+            <ImageView android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="32.0dip" android:layout_marginRight="15.0dip" android:src="@mipmap/ic_connitue_action" />
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_30alpha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Play with other players" android:layout_marginStart="30.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

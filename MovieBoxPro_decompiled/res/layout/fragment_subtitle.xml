@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_subtitle_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/color_main_yellow" android:id="@id/tvFilename" android:background="@color/color_main" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="30.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tvOpenSubtitle" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="OpenSubtitle" style="@style/FocusDialogItemSelectorStyle" />
+            <com.owen.tvrecyclerview.widget.TvRecyclerView android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/rvLanguage" android:background="@color/color_main" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" app:tv_layoutManager="GridLayoutManager" app:tv_numColumns="1" />
+        </LinearLayout>
+        <com.owen.tvrecyclerview.widget.TvRecyclerView android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/rvSubtitle" android:background="@color/color_main" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.3" android:layout_marginStart="5.0dip" app:tv_layoutManager="GridLayoutManager" app:tv_numColumns="1" />
+    </LinearLayout>
+</LinearLayout>

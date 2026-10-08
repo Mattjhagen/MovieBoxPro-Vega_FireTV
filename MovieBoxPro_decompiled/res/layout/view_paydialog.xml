@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lLayout_pay" android:background="@drawable/actionsheet_single_normal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="25.0dip">
+        <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:gravity="right" android:id="@id/pay_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="@color/actionsheet_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="会员充值" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/stone_vip_month" />
+    <LinearLayout android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="@color/actionsheet_gray" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的石子数：" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/actionsheet_gray" android:id="@id/pay_dialog_item2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="138" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="end" android:id="@id/pay_paystone" android:background="@drawable/paydialog_pressed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="3000石子兑换" />
+</LinearLayout>

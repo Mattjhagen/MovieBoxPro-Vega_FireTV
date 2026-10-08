@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="cast_expanded_controller_default_control_buttons">
+        <item>@id/cast_button_type_closed_caption</item>
+        <item>@id/cast_button_type_skip_previous</item>
+        <item>@id/cast_button_type_skip_next</item>
+        <item>@id/cast_button_type_mute_toggle</item>
+    </array>
+    <array name="cast_mini_controller_default_control_buttons">
+        <item>@id/cast_button_type_empty</item>
+        <item>@id/cast_button_type_empty</item>
+        <item>@id/cast_button_type_play_pause_toggle</item>
+    </array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>Normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="languages">
+        <item>af->Afrikaans</item>
+        <item>agq->Aghem</item>
+        <item>ak->Akan</item>
+        <item>ay->Aymara</item>
+        <item>sq->Albanian</item>
+        <item>am->Amharic</item>
+        <item>ar->Arabic</item>
+        <item>hy->Armenian</item>
+        <item>as->Assamese</item>
+        <item>asa->Asu</item>
+        <item>az->Azerbaijani</item>
+        <item>bm->Bambara</item>
+        <item>eu->Basque</item>
+        <item>be->Belarusian</item>
+        <item>bem->Bemba</item>
+        <item>bez->Bena</item>
+        <item>bn->Bengali</item>
+        <item>bho->Bhojpuri</item>
+        <item>brx->Bodo</item>
+        <item>bs->Bosnian</item>
+        <item>br->Breton</item>
+        <item>bg->Bulgarian</item>
+        <item>my->Burmese</item>
+        <item>ca->Catalan</item>
+        <item>ceb->Cebuano</item>
+        <item>co->Corsican</item>
+        <item>tzm->Central Atlas Tamazight</item>
+        <item>chr->Cherokee</item>
+        <item>cgg->Chiga</item>
+        <item>zh-CN->Chinese (Simplified)</item>
+        <item>zh-TW->Chinese (traditional)</item>
+        <item>kw->Cornish</item>
+        <item>hr->Croatian</item>
+        <item>cs->Czech</item>
+        <item>da->Danish</item>
+        <item>dua->Duala</item>
+        <item>doi->Dogri</item>
+        <item>dv->Dhivehi</item>
+        <item>nl->Dutch</item>
+        <item>dz->Dzongkha</item>
+        <item>ebu->Embu</item>
+        <item>en->English</item>
+        <item>eo->Esperanto</item>
+        <item>et->Estonian</item>
+        <item>ee->Ewe</item>
+        <item>ewo->Ewondo</item>
+        <item>fo->Faroese</item>
+        <item>fil->Filipino</item>
+        <item>fi->Finnish</item>
+        <item>fr->French</item>
+        <item>ff->Fulah</item>
+        <item>fy->Frisian</item>
+        <item>gl->Galician</item>
+        <item>lg->Ganda</item>
+        <item>ka->Georgian</item>
+        <item>de->German</item>
+        <item>el->Greek</item>
+        <item>gu->Gujarati</item>
+        <item>guz->Gusii</item>
+        <item>gd->Scots Gaelic</item>
+        <item>gn->Guarani</item>
+        <item>gom->Konkani</item>
+        <item>ha->Hausa</item>
+        <item>haw->Hawaiian</item>
+        <item>hmn->Hmong</item>
+        <item>he->Hebrew</item>
+        <item>hi->Hindi</item>
+        <item>hu->Hungarian</item>
+        <item>ht->Haitian Creole</item>
+        <item>is->Icelandic</item>
+        <item>ig->Igbo</item>
+        <item>id-ID->Indonesian</item>
+        <item>ilo->Ilocano</item>
+        <item>ga->Irish</item>
+        <item>it->Italian</item>
+        <item>jv->Javanese</item>
+        <item>dyo->Jola-Fonyi</item>
+        <item>ku->Kurdish (Kurmanji)</item>
+        <item>kri->Krio</item>
+        <item>ky->Kyrgyz</item>
+        <item>ckb->Kurdish (Sorani)</item>
+        <item>kea->Kabuverdianu</item>
+        <item>kab->Kabyle</item>
+        <item>kl->Kalaallisut</item>
+        <item>kam->Kamba</item>
+        <item>kn->Kannada</item>
+        <item>ks->Kashmiri</item>
+        <item>kk->Kazakh</item>
+        <item>km->Khmer</item>
+        <item>ki->Kikuyu</item>
+        <item>rw->Kinyarwanda</item>
+        <item>ko->Korean</item>
+        <item>khq->Koyra Chiini</item>
+        <item>nmg->Kwasio</item>
+        <item>lkt->Lakota</item>
+        <item>la->Latin</item>
+        <item>lb->Luxembourgish</item>
+        <item>lus->Mizo</item>
+        <item>lo->Lao</item>
+        <item>lv->Latvian</item>
+        <item>ln->Lingala</item>
+        <item>lt->Lithuanian</item>
+        <item>lu->Luba-Katanga</item>
+        <item>mk->Macedonian</item>
+        <item>mai->Maithili</item>
+        <item>mi->Maori</item>
+        <item>mni-Mtei->Meiteilon (Manipuri)</item>
+        <item>jmc->Machame</item>
+        <item>kde->Makonde</item>
+        <item>mg->Malagasy</item>
+        <item>ms->Malay</item>
+        <item>ml->Malayalam</item>
+        <item>mt->Maltese</item>
+        <item>gv->Manx</item>
+        <item>mr->Marathi</item>
+        <item>mas->Masai</item>
+        <item>mer->Meru</item>
+        <item>mn->Mongolian</item>
+        <item>mfe->Morisyen</item>
+        <item>mua->Mundang</item>
+        <item>naq->Nama</item>
+        <item>ne->Nepali</item>
+        <item>jgo->Ngomba</item>
+        <item>nd->North Ndebele</item>
+        <item>nb->Norwegian Bokmål</item>
+        <item>nn->Norwegian Nynorsk</item>
+        <item>nus->Nuer</item>
+        <item>nso->Sepedi</item>
+        <item>ny->Nyanja (Chichewa)</item>
+        <item>nyn->Nyankole</item>
+        <item>or->Oriya</item>
+        <item>om->Oromo</item>
+        <item>ps->Pashto</item>
+        <item>fa->Persian</item>
+        <item>pl->Polish</item>
+        <item>pt->Portuguese</item>
+        <item>pb->Portuguese (BR)</item>
+        <item>pa->Punjabi</item>
+        <item>qu->Quechua</item>
+        <item>ro->Romanian</item>
+        <item>rm->Romansh</item>
+        <item>rn->Rundi</item>
+        <item>ru->Russian</item>
+        <item>saq->Samburu</item>
+        <item>sa->Sanskrit</item>
+        <item>sd->Sindhi</item>
+        <item>sm->Samoan</item>
+        <item>st->Sesotho</item>
+        <item>su->Sundanese</item>
+        <item>tg->Tajik</item>
+        <item>tk->Turkmen</item>
+        <item>ts->Tsonga</item>
+        <item>tt->Tatar</item>
+        <item>sg->Sango</item>
+        <item>sbp->Sangu</item>
+        <item>she->Sena</item>
+        <item>sr->Serbian</item>
+        <item>ksb->Shambala</item>
+        <item>sn->Shona</item>
+        <item>ii->Sichuan Yi</item>
+        <item>si->Sinhala</item>
+        <item>sk->Slovak</item>
+        <item>sl->Slovenian</item>
+        <item>xog->Soga</item>
+        <item>so->Somali</item>
+        <item>es->Spanish</item>
+        <item>zgh->Standard Moroccan Tamazight</item>
+        <item>sw->Swahili</item>
+        <item>sv->Swedish</item>
+        <item>gsw->Swiss German</item>
+        <item>shi->Tachelhit</item>
+        <item>dav->Taita</item>
+        <item>ta->Tamil</item>
+        <item>twq->Tasawaq</item>
+        <item>te->Telugu</item>
+        <item>th-TH->Thai</item>
+        <item>bo->Tibetan</item>
+        <item>ti->Tigrinya</item>
+        <item>to->Tongan</item>
+        <item>tr->Turkish</item>
+        <item>uk->Ukrainian</item>
+        <item>ur->Urdu</item>
+        <item>ug->Uyghur</item>
+        <item>uz->Uzbek</item>
+        <item>xh->Xhosa</item>
+        <item>yi->Yiddish</item>
+        <item>vai->Vai</item>
+        <item>vi->Vietnamese</item>
+        <item>vun->Vunjo</item>
+        <item>cy->Welsh</item>
+        <item>yav->Yangben</item>
+        <item>yo->Yoruba</item>
+        <item>dje->Zarma</item>
+        <item>zu->Zulu</item>
+        <item>ja->ja_</item>
+    </string-array>
+    <string-array name="media_quality">
+        <item>720p</item>
+        <item>360p</item>
+        <item>720p</item>
+        <item>360p</item>
+        <item>1080P</item>
+    </string-array>
+    <string-array name="usual_languages">
+        <item>en->English</item>
+        <item>fr->French</item>
+        <item>ar->Arabic</item>
+        <item>it->Italian</item>
+        <item>es->Spanish</item>
+        <item>ru->Russian</item>
+        <item>th-TH->Thai</item>
+        <item>id-ID->Indonesian</item>
+        <item>tr->Turkish</item>
+        <item>zh-CN->Chinese (Simplified)</item>
+        <item>ko->Korean</item>
+        <item>pt-PT->Portuguese</item>
+        <item>pt-BR->Portuguese(BR)</item>
+        <item>hi->Hindi</item>
+        <item>ja->Japanese</item>
+        <item>de->German</item>
+        <item>tr->Turkish</item>
+    </string-array>
+</resources>

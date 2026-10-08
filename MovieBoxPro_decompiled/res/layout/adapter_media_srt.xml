@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_gray" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/srt_text" android:gravity="start" android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_centerVertical="true" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" android:layout_toStartOf="@id/linearLayout" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/linearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <ImageView android:id="@id/iv_view_subtitle" android:padding="10.0dip" android:layout_width="50.0dip" android:layout_height="40.0dip" android:src="@mipmap/ic_view_subtitle" />
+        <ImageView android:id="@id/adapter_srt_choose" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@mipmap/ic_choose_select" android:layout_marginEnd="10.0dip" />
+    </LinearLayout>
+</RelativeLayout>

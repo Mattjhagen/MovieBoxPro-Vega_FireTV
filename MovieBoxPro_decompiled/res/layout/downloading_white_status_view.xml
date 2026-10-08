@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/downloading_white_status_view_0" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/ivWaiting" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/ic_download_status_pause" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:indeterminateTint="@color/white" />
+    <com.dinuscxj.progressbar.CircleProgressBar android:layout_gravity="center" android:id="@id/circleProgressBar" android:background="@drawable/circle_white_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:progress_background_color="@android:color/transparent" app:progress_end_color="@color/white" app:progress_start_color="@color/white" app:progress_start_degree="270" app:progress_style="solid" app:progress_text_color="@android:color/transparent" />
+</FrameLayout>

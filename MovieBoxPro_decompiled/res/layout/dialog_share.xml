@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_dialog_border" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_screenshot_photo" android:layout_width="360.0dip" android:layout_height="180.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="20.0dip" />
+    <View android:background="@color/background_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:id="@id/btn_cancel" android:background="@drawable/sel_btn_share_left" android:layout_width="0.0dip" android:layout_height="50.0dip" android:text="取消" android:layout_weight="1.0" />
+        <View android:background="@color/background_gray" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <TextView android:gravity="center" android:id="@id/btn_share" android:background="@drawable/sel_btn_share_right" android:layout_width="0.0dip" android:layout_height="50.0dip" android:text="保存" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

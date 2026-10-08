@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:tag="layout/fragment_audio_delay_0" android:background="@color/color_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/flDecrease" android:layout_width="71.0dip" android:layout_height="40.0dip" style="@style/FocusFilterItemSelectorStyle">
+        <ImageView android:layout_gravity="center" android:duplicateParentState="true" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/decrease_selector" />
+    </FrameLayout>
+    <TextView android:textSize="40.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/tvDelay" android:layout_width="150.0dip" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/flIncrease" android:layout_width="71.0dip" android:layout_height="40.0dip" style="@style/FocusFilterItemSelectorStyle">
+        <ImageView android:layout_gravity="center" android:duplicateParentState="true" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/increase_selector" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/message" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/status_btn" android:background="@drawable/dkplayer_shape_status_view_btn" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="26.0dip" />
+    </LinearLayout>
+</FrameLayout>

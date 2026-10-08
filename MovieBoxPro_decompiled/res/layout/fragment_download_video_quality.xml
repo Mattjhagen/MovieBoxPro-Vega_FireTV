@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/linearLayout" android:tag="layout/fragment_download_video_quality_0" android:background="@drawable/white_light_dark_selector" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.owen.tvrecyclerview.widget.TvRecyclerView android:orientation="vertical" android:id="@id/recyclerView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0" app:tv_layoutManager="GridLayoutManager" app:tv_numColumns="1" />
+    <View android:background="@color/black" android:layout_width="2.0dip" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+        <com.owen.tvrecyclerview.widget.TvRecyclerView android:orientation="vertical" android:id="@id/rvDevice" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" app:tv_layoutManager="GridLayoutManager" app:tv_numColumns="1" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white_70alpha" android:id="@id/tvNote" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="5.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/white_70alpha" android:id="@id/tvPath" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="Download path:Android/data/" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="right" android:id="@id/fl_srt_select" android:background="@color/bg_video_view" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:translationX="2000.0dip">
+        <ListView android:id="@id/lv_srt" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" />
+    </FrameLayout>
+</merge>

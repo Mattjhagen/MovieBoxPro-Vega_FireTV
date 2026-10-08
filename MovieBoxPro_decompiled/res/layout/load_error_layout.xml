@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/load_error_layout_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="36.0sp" android:textColor="@color/white" android:id="@id/tvMsg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ERROR!" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="Please refresh the page." />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/tvRefresh" android:layout_width="150.0dip" android:layout_height="45.0dip" android:layout_marginTop="32.0dip" android:text="Refresh" style="@style/FocusSelectorStyle" />
+        <ImageView android:layout_width="410.0dip" android:layout_height="100.0dip" android:layout_marginTop="60.0dip" android:src="@mipmap/ic_load_error_stop" />
+    </LinearLayout>
+</FrameLayout>

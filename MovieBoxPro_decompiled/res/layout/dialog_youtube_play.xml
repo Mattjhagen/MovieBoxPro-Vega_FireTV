@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/frameLayout" android:tag="layout/dialog_youtube_play_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.media3.ui.PlayerView android:id="@id/playerView" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:resize_mode="fit" app:surface_type="texture_view" app:use_controller="false" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateTint="@color/color_main_blue" />
+    <ImageView android:layout_gravity="center" android:id="@id/ivPlayPause" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+    <androidx.appcompat.widget.AppCompatSeekBar android:layout_gravity="bottom" android:id="@id/playerSeekBar" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:focusable="true" android:visibility="gone" android:nextFocusUp="@id/tvSeekBarTop" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginBottom="30.0dip" android:progressDrawable="@drawable/player_progress_shape" android:thumb="@drawable/sel_btn_seekball" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" android:elevation="5.0dip" />
+</FrameLayout>

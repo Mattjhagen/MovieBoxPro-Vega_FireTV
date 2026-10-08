@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/sel_btn_quality" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="18.0sp" android:textColor="@color/srt_text" android:id="@id/adapter_srt_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/srt_text_select" android:id="@id/adapter_srt_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/adapter_srt_size" />
+        <ImageView android:id="@id/adapter_srt_choose" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:src="@mipmap/ic_choose_select" android:layout_below="@id/adapter_srt_size" android:layout_alignParentRight="true" />
+        <View android:background="@color/seek_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/adapter_srt_selected" />
+    </RelativeLayout>
+</FrameLayout>

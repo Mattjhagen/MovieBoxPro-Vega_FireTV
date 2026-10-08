@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_search_video_result_0" android:background="@color/color_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.owen.tab.TvTabLayout android:id="@id/tvTabLayout" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_weight="1.0" app:tv_tabGravity="center" app:tv_tabIndicatorGravity="bottom" app:tv_tabIndicatorHeight="0.0dip" app:tv_tabIndicatorResId="@color/white" app:tv_tabMinWidth="300.0dip" app:tv_tabTexSize="24.0sp" app:tv_tabTextColor="@drawable/home_tab_text_color_selector" app:tv_tabTextSelectedScale="1.15" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/frameLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

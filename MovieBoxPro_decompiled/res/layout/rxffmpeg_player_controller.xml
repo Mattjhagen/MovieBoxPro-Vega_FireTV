@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/progressBar" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:indeterminateTint="@android:color/white" android:indeterminateTintMode="src_atop" style="?android:progressBarStyleLargeInverse" />
+    <RelativeLayout android:id="@id/bottomPanel" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:paddingStart="10.0dip" android:paddingEnd="42.0dip">
+        <ImageView android:id="@id/iv_play" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@mipmap/rxffmpeg_player_start" android:layout_centerVertical="true" android:contentDescription="@null" />
+        <TextView android:textColor="#ffffffff" android:id="@id/time_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="20.0dip" android:layout_marginEnd="10.0dip" android:layout_toEndOf="@id/iv_play" />
+        <ImageView android:id="@id/iv_mute" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@mipmap/rxffmpeg_player_unmute" android:contentDescription="@null" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+        <SeekBar android:id="@id/progress_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/iv_mute" android:layout_toEndOf="@id/time_view" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_fullscreen" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_margin="10.0dip" android:src="@mipmap/rxffmpeg_player_gotonormal" android:layout_alignParentBottom="true" android:contentDescription="@null" android:layout_alignParentEnd="true" />
+    <FrameLayout android:id="@id/repeatPlay" android:background="#b2000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableTop="@mipmap/rxffmpeg_player_play" android:drawablePadding="5.0dip" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_bg_dialog_white_10" android:layout_width="250.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/dialog_action_title" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/info" android:singleLine="true" />
+    <View android:background="@color/alertdialog_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <ScrollView android:id="@id/dialog_action_scroller" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/dialog_action_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <View android:background="@color/alertdialog_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff007aff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/dialog_action_btn" android:background="@drawable/selector_text_bottom_bg" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cancel" android:singleLine="true" />
+</LinearLayout>

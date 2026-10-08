@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/fragment_choose_login_way_0" android:background="@color/color_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llQr" android:layout_width="477.0dip" android:layout_height="67.0dip" android:layout_marginTop="25.0dip" android:layout_marginStart="25.0dip" android:layout_marginEnd="25.0dip" style="@style/FocusSelectorStyle">
+            <ImageView android:duplicateParentState="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/ic_qr_login" android:layout_marginStart="28.0dip" app:tint="@color/btn_text_color_black_selector" />
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/btn_text_color_black_selector" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Scan QR to login" android:layout_marginStart="14.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llCode" android:layout_width="477.0dip" android:layout_height="67.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="25.0dip" android:layout_marginStart="25.0dip" android:layout_marginEnd="25.0dip" style="@style/FocusSelectorStyle">
+            <ImageView android:duplicateParentState="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/ic_code_login" android:layout_marginStart="28.0dip" app:tint="@color/btn_text_color_black_selector" />
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/btn_text_color_black_selector" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Get code to login" android:layout_marginStart="14.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/white_87alpha" android:id="@id/tvVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="https://www.movieboxpro.app" />
+    </LinearLayout>
+</FrameLayout>

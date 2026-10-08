@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <rotate android:duration="200" android:drawable="@drawable/ic_splash_top" android:fromDegrees="0.0" android:toDegrees="-30.0" android:pivotX="0.0" android:pivotY="100.0%" android:repeatCount="3" android:repeatMode="reverse" />
+</rotate>

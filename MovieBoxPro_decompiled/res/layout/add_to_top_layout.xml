@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="32.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="Add to" />
+    <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginStart="75.0dip" android:layout_marginEnd="75.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llWaiting" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="65.0dip" android:layout_weight="1.0" style="@style/FocusSelectorStyle">
+            <ImageView android:id="@id/ivWaiting" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/ic_waiting" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white_30alpha" android:id="@id/tvWaiting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="WAITING" android:layout_marginStart="15.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llWatched" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="65.0dip" android:layout_weight="1.0" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" style="@style/FocusSelectorStyle">
+            <ImageView android:id="@id/ivWatched" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/ic_watched" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white_30alpha" android:id="@id/tvWatched" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="WATCHED" android:layout_marginStart="15.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/llFavorite" android:layout_width="190.0dip" android:layout_height="65.0dip" style="@style/FocusSelectorStyle">
+            <ImageView android:id="@id/ivFavorite" android:duplicateParentState="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/ic_favorite" app:tint="@color/btn_text_color_black_selector" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/btn_text_color_black_selector" android:id="@id/tvFavorite" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="FAVORITES" android:layout_marginStart="15.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llDownload" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="65.0dip" android:layout_weight="1.0" style="@style/FocusSelectorStyle">
+            <ImageView android:duplicateParentState="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/ic_download" app:tint="@color/btn_text_color_black_selector" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/btn_text_color_black_selector" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DOWNLOAD" android:layout_marginStart="15.0dip" />
+        </LinearLayout>
+    </FrameLayout>
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white_30alpha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="MOVIELIST" />
+</LinearLayout>

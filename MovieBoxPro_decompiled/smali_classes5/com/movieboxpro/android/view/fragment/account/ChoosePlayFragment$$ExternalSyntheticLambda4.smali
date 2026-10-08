@@ -1,0 +1,36 @@
+.class public final synthetic Lcom/movieboxpro/android/view/fragment/account/ChoosePlayFragment$$ExternalSyntheticLambda4;
+.super Ljava/lang/Object;
+.source "D8$$SyntheticClass"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# instance fields
+.field public final synthetic f$0:Lcom/movieboxpro/android/view/fragment/account/ChoosePlayFragment;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/movieboxpro/android/view/fragment/account/ChoosePlayFragment;)V
+    .locals 0
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/movieboxpro/android/view/fragment/account/ChoosePlayFragment$$ExternalSyntheticLambda4;->f$0:Lcom/movieboxpro/android/view/fragment/account/ChoosePlayFragment;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 1
+
+    .line 0
+    iget-object v0, p0, Lcom/movieboxpro/android/view/fragment/account/ChoosePlayFragment$$ExternalSyntheticLambda4;->f$0:Lcom/movieboxpro/android/view/fragment/account/ChoosePlayFragment;
+
+    invoke-static {v0, p1}, Lcom/movieboxpro/android/view/fragment/account/ChoosePlayFragment;->$r8$lambda$9pP8SIGSynxwBoME9rFFjxsERDs(Lcom/movieboxpro/android/view/fragment/account/ChoosePlayFragment;Landroid/view/View;)V
+
+    return-void
+.end method

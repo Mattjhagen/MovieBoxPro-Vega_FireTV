@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/llBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@id/llHint" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@mipmap/ic_long_press_hint" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white_70alpha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="sdasdas" android:layout_marginStart="5.0dip" />
+        <View android:background="#17d8d8d8" android:layout_width="2.0dip" android:layout_height="10.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/white_70alpha" android:layout_gravity="bottom" android:id="@id/tvDeviceSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="200MB Used,200MB Free" android:layout_marginEnd="20.0dip" />
+</LinearLayout>

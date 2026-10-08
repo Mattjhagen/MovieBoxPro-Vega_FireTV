@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/activity_trans_code_0" android:background="@color/background_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.owen.tvrecyclerview.widget.TvRecyclerView android:id="@id/rvLanguage" android:background="#ff242424" android:layout_width="wrap_content" android:layout_height="fill_parent" android:overScrollMode="never" app:tv_layoutManager="GridLayoutManager" app:tv_numColumns="1" />
+        <View android:background="@color/background_gray" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:background="#ff242424" android:layout_width="170.0dip" android:layout_height="fill_parent">
+            <com.owen.tvrecyclerview.widget.TvRecyclerView android:id="@id/rvCode" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:overScrollMode="never" app:tv_layoutManager="GridLayoutManager" app:tv_numColumns="1" />
+        </LinearLayout>
+        <com.owen.tvrecyclerview.widget.TvRecyclerView android:id="@id/rvSubtitle" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:overScrollMode="never" app:tv_layoutManager="GridLayoutManager" app:tv_numColumns="1" />
+        <FrameLayout android:id="@id/flDone" android:layout_width="80.0dip" android:layout_height="fill_parent" style="@style/FocusSelectorStyle">
+            <ImageView android:layout_gravity="center" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@mipmap/ic_select_subtitle" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/alpha_bg_shape" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="100.0dip">
+        <ImageView android:id="@id/imageView" android:layout_width="75.0dip" android:layout_height="65.0dip" android:layout_marginLeft="50.0dip" android:src="@mipmap/ic_test_net_speed" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/white_30alpha" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:text="@string/test_net_hint" android:lineSpacingExtra="10.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/imageView" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@drawable/light_focus_selector" android:gravity="center" android:id="@id/tvPositive" android:layout_width="155.0dip" android:layout_height="55.0dip" android:layout_marginRight="30.0dip" android:text="YES" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/LightFocusSelectorStyle" />
+        <TextView android:textSize="20.0sp" android:textColor="@drawable/light_focus_selector" android:gravity="center" android:id="@id/tvCancel" android:layout_width="155.0dip" android:layout_height="55.0dip" android:text="Cancle" android:layout_marginEnd="10.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toLeftOf="@id/tvPositive" app:layout_constraintTop_toTopOf="parent" style="@style/LightFocusSelectorStyle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

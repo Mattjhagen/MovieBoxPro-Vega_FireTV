@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/emptyViewStub" android:layout="@layout/empty_view_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/errorViewStub" android:layout="@layout/net_error_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout android:id="@id/refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.owen.tvrecyclerview.widget.TvRecyclerView android:id="@id/recyclerView" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" app:tv_layoutManager="GridLayoutManager" app:tv_numColumns="6" />
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+</LinearLayout>

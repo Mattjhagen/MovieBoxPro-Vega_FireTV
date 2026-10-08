@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:tag="layout/fragment_low_quality_hint_0" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="340.0dip" android:layout_height="215.0dip" android:layout_marginTop="86.0dip" android:src="@drawable/low_quality" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/white_30alpha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="The source quality is very low , continue to watch ?" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/color_main_yellow" android:gravity="center" android:id="@id/tvClose" android:layout_width="140.0dip" android:layout_height="45.0dip" android:layout_marginTop="28.0dip" android:text="Close" style="@style/FocusTransparentSelectorStyle" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white_70alpha" android:gravity="center" android:id="@id/tvContinue" android:layout_width="140.0dip" android:layout_height="45.0dip" android:layout_marginTop="28.0dip" android:layout_marginBottom="25.0dip" android:text="Continue" style="@style/FocusTransparentSelectorStyle" />
+    </LinearLayout>
+</ScrollView>

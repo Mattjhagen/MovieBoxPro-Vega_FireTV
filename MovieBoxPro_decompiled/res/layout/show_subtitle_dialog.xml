@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/show_subtitle_dialog_0" android:background="@drawable/light_dark_corner_shape" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/tvSubtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <View android:background="@color/black" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="20.0dip" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/tvCancel" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="Cancel" android:layout_weight="1.0" />
+        <View android:background="@color/black" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/tvDownload" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="Download" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

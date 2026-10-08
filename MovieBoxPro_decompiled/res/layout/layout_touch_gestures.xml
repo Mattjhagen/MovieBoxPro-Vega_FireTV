@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/fl_touch_layout" android:background="@drawable/shape_video_bg" android:visibility="visible" android:layout_width="100.0dip" android:layout_height="100.0dip">
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_volume" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50%" android:drawableTop="@mipmap/ic_volume_on" android:drawablePadding="5.0dip" />
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_brightness" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50%" android:drawableTop="@mipmap/ic_brightness" android:drawablePadding="5.0dip" />
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_fast_forward" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50%" android:drawablePadding="5.0dip" />
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50%" android:drawableTop="@mipmap/ic_fast_rewind" android:drawablePadding="5.0dip" />
+    </FrameLayout>
+</merge>

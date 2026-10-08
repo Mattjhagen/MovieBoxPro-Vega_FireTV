@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_edit_danmaku" android:background="@color/bg_video_view" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_cancel_send" android:background="@drawable/sel_item_background" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@mipmap/ic_cancel_danmaku" />
+            <EditText android:textColor="@color/text_content" android:textColorHint="@color/text_hint" android:id="@id/et_danmaku_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="输入弹幕内容" android:singleLine="true" android:layout_weight="1.0" android:imeOptions="flagNoEnterAction|flagNoExtractUi|flagNoFullscreen" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_do_send" android:background="@drawable/sel_item_background" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_send_danmaku" />
+        </LinearLayout>
+        <include layout="@layout/layout_danmaku_input_options" />
+    </LinearLayout>
+</merge>

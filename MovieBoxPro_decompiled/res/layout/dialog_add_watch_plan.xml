@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:tag="layout/dialog_add_watch_plan_0" android:background="#f51d1d1d" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llWaiting" android:layout_width="190.0dip" android:layout_height="65.0dip" style="@style/FocusSelectorStyle">
+        <ImageView android:id="@id/ivWaiting" android:duplicateParentState="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/ic_waiting" app:tint="@color/btn_text_color_black_selector" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/btn_text_color_black_selector" android:id="@id/tvWaiting" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="WAITING" android:layout_marginStart="15.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llWatched" android:layout_width="190.0dip" android:layout_height="65.0dip" android:layout_marginTop="30.0dip" style="@style/FocusSelectorStyle">
+        <ImageView android:id="@id/ivWatched" android:duplicateParentState="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/ic_watched" app:tint="@color/btn_text_color_black_selector" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/btn_text_color_black_selector" android:id="@id/tvWatched" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="WATCHED" android:layout_marginStart="15.0dip" />
+    </LinearLayout>
+</LinearLayout>

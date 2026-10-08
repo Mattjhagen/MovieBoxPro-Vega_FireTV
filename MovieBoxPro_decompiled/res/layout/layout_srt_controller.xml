@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="@dimen/control_bar_height2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/ll_bottom_srt" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <TextView android:textSize="10.0dip" android:textColor="@color/srt_text" android:gravity="center" android:id="@id/ll_srt_describe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Move to choose last said" />
+        <ImageView android:id="@id/ll_srt_close" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/ic_cancel_skip" android:layout_alignParentRight="true" />
+        <TextView android:textColor="@color/srt_text" android:id="@id/ll_srt_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_below="@id/ll_srt_describe" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/ll_srt_subtract" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:src="@mipmap/ic_subtract" android:layout_toLeftOf="@id/ll_srt_speed" android:layout_below="@id/ll_srt_describe" />
+        <ImageView android:id="@id/ll_srt_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:src="@mipmap/ic_add" android:layout_toRightOf="@id/ll_srt_speed" android:layout_alignTop="@id/ll_srt_subtract" />
+        <TextView android:textSize="10.0dip" android:textColor="@color/srt_text" android:gravity="center" android:id="@id/ll_srt_average" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Most users choose 1s" android:layout_below="@id/ll_srt_speed" />
+    </RelativeLayout>
+</merge>

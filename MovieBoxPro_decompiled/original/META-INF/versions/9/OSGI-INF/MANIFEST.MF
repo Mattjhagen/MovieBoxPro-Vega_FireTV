@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Import-Package: java.io,java.lang,java.net,java.nio.charset,java.util,
+ java.util.concurrent,kotlin;version="[2.2,3)",kotlin.collections;vers
+ ion="[2.2,3)",kotlin.enums;version="[2.2,3)",kotlin.io;version="[2.2,
+ 3)",kotlin.jvm.internal;version="[2.2,3)",kotlin.text;version="[2.2,3
+ )",okhttp3;version="[5.3,6)",okhttp3.internal;version="[5.3,6)";okhtt
+ pinternal=true,okhttp3.internal.http;version="[5.3,6)";okhttpinternal
+ =true,okhttp3.internal.platform;version="[5.3,6)";okhttpinternal=true
+ ,okio;version="[3.16,4)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+

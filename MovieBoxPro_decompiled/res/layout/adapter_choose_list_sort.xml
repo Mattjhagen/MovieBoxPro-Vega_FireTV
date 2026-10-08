@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_70alpha" android:gravity="center" android:id="@id/textView" android:layout_width="460.0dip" android:layout_height="65.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" style="@style/FocusDialogItemSelectorStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

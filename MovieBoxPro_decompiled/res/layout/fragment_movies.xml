@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/container" android:tag="layout/fragment_movies_0" android:background="@color/color_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/llTopFilter" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center_horizontal" android:id="@id/clFilter" android:layout_width="300.0dip" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" style="@style/FocusSelectorStyle" xmlns:app="http://schemas.android.com/apk/res-auto">
+            <ImageView android:id="@id/imageView6" android:duplicateParentState="true" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@mipmap/ic_filter" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/textView17" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:tint="@color/btn_text_color_black_selector" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/btn_text_color_black_selector" android:id="@id/textView17" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Filter" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/imageView6" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <FrameLayout android:id="@id/specialFrameLayout" android:nextFocusUp="@id/clFilter" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/flLoading" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:focusable="false" android:layout_width="50.0dip" android:layout_height="50.0dip" android:indeterminateTint="@color/white" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/frameLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" />
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/llContainer" android:tag="layout/fragment_audio_track_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/llAudioTracks" android:background="@color/color_main" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="60.0dip">
+            <com.owen.tvrecyclerview.widget.TvRecyclerView android:orientation="vertical" android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" app:tv_layoutManager="GridLayoutManager" app:tv_numColumns="1" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/flLoading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:layout_width="30.0dip" android:layout_height="30.0dip" android:indeterminateTint="@color/white" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/tvTryAgain" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llBestAudio" android:background="@color/color_main" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Best Audio" />
+            <TextView android:textColor="@color/white_70alpha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Prefer Dolby Atmos, TrueHD &amp; EAC3. \nCompatible device required." />
+        </LinearLayout>
+        <TextView android:textColor="@color/btn_text_color_black_selector" android:gravity="center" android:id="@id/tvDefaultAudio" android:layout_width="80.0dip" android:layout_height="40.0dip" android:layout_marginStart="16.0dip" style="@style/FocusSelectorStyle" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/llDelay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="#00343434" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="@color/color_main" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/ivShowTrack" android:background="@drawable/sel_btn_play_back" android:focusable="true" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@mipmap/ic_up_arrow" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="@color/white_30alpha" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Audio Delay" android:layout_marginEnd="30.0dip" />
+                <ImageView android:id="@id/ivDelaySub" android:background="@drawable/sel_btn_play_back" android:focusable="true" android:nextFocusRight="@id/ivDelayAdd" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@mipmap/ic_subtract" android:scaleType="center" />
+                <TextView android:textSize="20.0sp" android:textColor="@color/white_30alpha" android:id="@id/tvDelay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0s" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+                <ImageView android:id="@id/ivDelayAdd" android:background="@drawable/sel_btn_play_back" android:focusable="true" android:nextFocusLeft="@id/ivDelaySub" android:nextFocusRight="@id/ivAudioSyn" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@mipmap/ic_add" android:scaleType="center" />
+                <View android:background="#1affffff" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginStart="20.0dip" />
+                <ImageView android:id="@id/ivAudioSyn" android:background="@drawable/sel_btn_play_back" android:padding="10.0dip" android:focusable="true" android:nextFocusLeft="@id/ivDelayAdd" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@mipmap/ic_audio_syn" android:layout_marginStart="16.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/white_70alpha" android:layout_gravity="center_horizontal" android:id="@id/tvAudioHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="If the audio is slower, please  increase" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

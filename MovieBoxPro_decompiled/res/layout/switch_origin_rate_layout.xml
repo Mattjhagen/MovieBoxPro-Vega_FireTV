@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/main_black_corner_shape" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="180.0dip" android:layout_height="130.0dip" android:layout_marginTop="30.0dip" android:src="@mipmap/ic_temperature_warn" android:layout_marginStart="35.0dip" android:layout_marginEnd="35.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/white_alpha" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="Recommended for use in Chromecast, or TV APP." android:layout_marginStart="35.0dip" android:layout_marginEnd="35.0dip" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/color_main_yellow" android:gravity="center" android:id="@id/tv_keep" android:background="@color/color_main_back" android:layout_width="fill_parent" android:layout_height="43.0dip" android:layout_marginTop="30.0dip" android:foreground="?android:selectableItemBackground" android:text="Keep using" />
+    <View android:background="@color/black" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white_alpha" android:gravity="center" android:id="@id/tv_cancel" android:background="@drawable/bottom_second_black_10corner_shape" android:layout_width="fill_parent" android:layout_height="43.0dip" android:foreground="?android:selectableItemBackground" android:text="Cancel" />
+</LinearLayout>

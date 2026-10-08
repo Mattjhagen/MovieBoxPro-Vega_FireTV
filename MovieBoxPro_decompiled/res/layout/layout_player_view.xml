@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_video_box" android:background="@android:color/black" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dl7.player.media.IjkVideoView android:id="@id/video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/srt_text" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/video_text" android:layout_width="fill_parent" android:layout_height="@dimen/control_bar_height2" android:layout_marginBottom="40.0dip" android:maxLines="1" />
+    <ImageView android:id="@id/iv_thumb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@android:color/black" android:scaleType="fitXY" />
+    <master.flame.danmaku.ui.widget.DanmakuView android:id="@id/sv_danmaku" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:gravity="center" android:layout_gravity="center" android:id="@id/pb_loading" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:indeterminateOnly="true" android:indeterminateBehavior="repeat" />
+    <include android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/layout_touch_gestures" />
+    <include layout="@layout/layout_top_bar" />
+    <include layout="@layout/layout_bottom_bar" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_player_lock" android:background="@drawable/shape_player_lock_bg" android:padding="10.0dip" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/sel_player_lock" />
+    <include layout="@layout/layout_skip_tip" />
+    <ImageView android:layout_gravity="center" android:id="@id/iv_play_circle" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@mipmap/ic_play_circle" />
+    <FrameLayout android:id="@id/fl_reload_layout" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="16.0sp" android:textColor="#ffd4237a" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_reload" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Try Again" android:drawableTop="@mipmap/ic_reload" />
+    </FrameLayout>
+    <include layout="@layout/layout_media_quality" />
+    <include layout="@layout/layout_srt_exrt" />
+    <include layout="@layout/layout_media_track" />
+    <include layout="@layout/layout_cc_select" />
+    <include layout="@layout/layout_send_danmaku" />
+    <include layout="@layout/layout_setting_controller" />
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/llRememberOrg" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="35.0dip" android:layout_marginBottom="10.0dip" style="@style/FocusRectSelectorStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivIcon" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="32.0dip" android:src="@mipmap/ic_child_mode" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="32.0dip">
+        <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_30alpha" android:ellipsize="end" android:id="@id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white_70alpha" android:ellipsize="end" android:id="@id/tvDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+    <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white_70alpha" android:gravity="end" android:id="@id/tvStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="32.0dip" />
+    <ImageView android:id="@id/imageView" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginEnd="20.0dip" />
+</LinearLayout>

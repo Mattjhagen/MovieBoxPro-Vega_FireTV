@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="right" android:id="@id/fl_media_track" android:background="@color/bg_video_view" android:layout_width="200.0dip" android:layout_height="fill_parent" android:translationX="200.0dip">
+        <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/lv_media_track_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Audio" />
+        <ListView android:id="@id/lv_media_track" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:layout_below="@id/lv_media_track_title" />
+    </RelativeLayout>
+</merge>

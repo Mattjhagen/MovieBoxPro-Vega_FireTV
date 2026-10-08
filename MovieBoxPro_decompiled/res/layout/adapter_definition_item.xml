@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/constraintLayout" android:focusable="true" android:layout_width="fill_parent" android:layout_height="60.0dip" style="@style/FocusDialogItemSelectorStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/llImage" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="16.0dip">
+        <ImageView android:id="@id/ivOrg" android:layout_width="32.0dip" android:layout_height="22.0dip" android:src="@mipmap/ic_origin_rate" />
+        <ImageView android:id="@id/ivCode" android:layout_width="32.0dip" android:layout_height="22.0dip" android:layout_marginStart="10.0dip" />
+        <ImageView android:id="@id/ivDefinition" android:layout_width="32.0dip" android:layout_height="22.0dip" android:layout_marginStart="10.0dip" />
+        <ImageView android:id="@id/ivHdr" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="22.0dip" android:src="@mipmap/ic_video_hdr" android:layout_marginStart="10.0dip" />
+        <ImageView android:id="@id/ivColorBit" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="22.0dip" android:layout_marginStart="10.0dip" />
+        <LinearLayout android:id="@id/ll_rate" android:layout_width="32.0dip" android:layout_height="22.0dip" android:layout_marginStart="10.0dip">
+            <TextView android:textSize="7.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/tv_rate" android:background="@mipmap/ic_definition_bg" android:layout_width="32.0dip" android:layout_height="22.0dip" />
+        </LinearLayout>
+        <ImageView android:id="@id/ivVip" android:layout_width="32.0dip" android:layout_height="22.0dip" android:src="@mipmap/ic_choose_vip" android:layout_marginStart="10.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="15.0dip" />
+    <ImageView android:id="@id/iv_selected" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@mipmap/ic_choose_select" android:layout_marginEnd="15.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/llImage" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llDownloaded" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginStart="15.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_name">
+        <ImageView android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@mipmap/ic_downloaded_file" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/color_main_blue" android:id="@id/tvDownloadedTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="2.0dip" />
+    </LinearLayout>
+</LinearLayout>

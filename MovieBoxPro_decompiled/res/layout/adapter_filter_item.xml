@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textColor="@color/white" android:gravity="center" android:id="@id/textView" android:layout_width="153.0dip" android:layout_height="56.0dip" style="@style/FocusRectSelectorStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

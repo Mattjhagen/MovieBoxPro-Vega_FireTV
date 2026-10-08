@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="@dimen/control_bar_height2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/rlSubtitlePos" android:focusable="false" android:layout_width="wrap_content" android:layout_height="@dimen/control_bar_height2">
+        <ImageView android:id="@id/ivSubtitleUp" android:background="@drawable/sel_btn_play_back" android:padding="10.0dip" android:focusable="true" android:nextFocusDown="@id/ivSubtitleDown" android:layout_width="45.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:src="@mipmap/ic_subtitle_up" />
+        <ImageView android:id="@id/ivSubtitleDown" android:background="@drawable/sel_btn_play_back" android:padding="10.0dip" android:focusable="true" android:nextFocusUp="@id/ivSubtitleUp" android:nextFocusDown="@id/ivSubtitlePosClose" android:layout_width="45.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@mipmap/ic_subtitle_down" android:layout_toRightOf="@id/ivSubtitleUp" />
+        <ImageView android:id="@id/ivSubtitlePosClose" android:background="@drawable/sel_btn_play_back" android:padding="12.0dip" android:focusable="true" android:nextFocusUp="@id/ivSubtitleDown" android:layout_width="45.0dip" android:layout_height="fill_parent" android:src="@mipmap/ic_zoom_in" android:layout_centerVertical="true" android:layout_marginStart="20.0dip" />
+    </RelativeLayout>
+</merge>

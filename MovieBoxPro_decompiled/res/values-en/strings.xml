@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MovieBoxPro</string>
+    <string name="brvah_load_complete">Click to load more</string>
+    <string name="brvah_load_end">No more data</string>
+    <string name="brvah_load_failed">load more failed</string>
+    <string name="brvah_loading">Loading...</string>
+    <string name="by_web_string_click_load">点击重新加载</string>
+    <string name="by_web_string_loading">Loading…</string>
+    <string name="dkplayer_continue_play">Continue playing</string>
+    <string name="dkplayer_error_message">Something went wrong, please try again later</string>
+    <string name="dkplayer_retry">Retry</string>
+    <string name="dkplayer_wifi_tip">You are currently using the mobile network, and continuing to play will consume traffic</string>
+    <string name="lrc_label">Not Available</string>
+</resources>

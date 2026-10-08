@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:tag="layout/fragment_time_incorrect_hint_0" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="86.0dip" android:src="@mipmap/ic_time_error" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/white_30alpha" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Your device time is wrong, it may affect your use.\n Please modify as soon as possible" android:lineSpacingExtra="3.0dip" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/color_main_blue" android:gravity="center" android:id="@id/tvClose" android:layout_width="140.0dip" android:layout_height="45.0dip" android:layout_marginTop="28.0dip" android:text="OK" style="@style/FocusTransparentSelectorStyle" />
+    </LinearLayout>
+</ScrollView>
