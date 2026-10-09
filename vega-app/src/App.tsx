@@ -17,16 +17,16 @@ export const App = () => {
         {focusedTileId === 'home' ? (
           <>
             <View style={styles.headerTextContainer}>
-              <Text style={styles.headerTitle}>Hello Vega,</Text>
+              <Text style={styles.headerTitle}>MovieBoxPro</Text>
               <Text style={styles.headerSubtitle}>
-                Use your remote to explore and start your Vega journey 🚀
+                Welcome to Fire TV Edition - Use your remote to navigate
               </Text>
             </View>
             <Image
-              source={require('./assets/vega.png')}
+              source={require('./assets/app_logo.png')}
               style={styles.vegaLogo}
               resizeMode="contain"
-              testID="vega-logo"
+              testID="app-logo"
             />
           </>
         ) : (

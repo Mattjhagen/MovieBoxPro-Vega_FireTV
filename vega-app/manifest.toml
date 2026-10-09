@@ -1,7 +1,7 @@
 schema-version = 1
 
 [package]
-title = "Basic UI React Native Application for project movieboxprovega"
+title = "MovieBoxPro"
 version = "0.1.0"
 id = "com.movieboxpro.firetv"
 
