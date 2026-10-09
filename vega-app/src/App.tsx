@@ -1,15 +1,71 @@
 import React, {useState} from 'react';
-import {StyleSheet, Text, ImageBackground, View, Image} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  ImageBackground,
+  View,
+  Image,
+  StatusBar,
+  SafeAreaView,
+} from 'react-native';
 import {TVFocusGuideView} from '@amazon-devices/react-native-kepler';
 import {Tile} from './components/Tile';
 import {tiles} from './data/tiles';
+import {HomeScreen} from './screens/HomeScreen';
+import {SearchScreen} from './screens/SearchScreen';
+import {SettingsScreen} from './screens/SettingsScreen';
+
+type Screen =
+  | 'menu'
+  | 'home'
+  | 'movies'
+  | 'tv-shows'
+  | 'search'
+  | 'my-list'
+  | 'settings';
 
 export const App = () => {
+  const [currentScreen, setCurrentScreen] = useState<Screen>('menu');
   const [focusedTileId, setFocusedTileId] = useState<string>('home');
 
   const focusedTile = tiles.find((t) => t.id === focusedTileId);
 
-  return (
+  const handleTileSelect = (tileId: string) => {
+    console.log('Tile selected:', tileId);
+    setCurrentScreen(tileId as Screen);
+  };
+
+  // Render different screens based on currentScreen
+  const renderScreen = () => {
+    switch (currentScreen) {
+      case 'home':
+        return <HomeScreen />;
+      case 'movies':
+        return <HomeScreen />; // TODO: Create dedicated Movies screen
+      case 'tv-shows':
+        return <HomeScreen />; // TODO: Create dedicated TV Shows screen
+      case 'search':
+        return <SearchScreen />;
+      case 'my-list':
+        return (
+          <View style={styles.placeholderScreen}>
+            <Text style={styles.placeholderText}>
+              My List - Coming Soon
+            </Text>
+            <Text style={styles.placeholderSubtext}>
+              Press Back to return to menu
+            </Text>
+          </View>
+        );
+      case 'settings':
+        return <SettingsScreen />;
+      case 'menu':
+      default:
+        return renderMenu();
+    }
+  };
+
+  const renderMenu = () => (
     <ImageBackground
       source={require('./assets/background.png')}
       style={styles.background}>
@@ -19,7 +75,7 @@ export const App = () => {
             <View style={styles.headerTextContainer}>
               <Text style={styles.headerTitle}>MovieBoxPro</Text>
               <Text style={styles.headerSubtitle}>
-                Welcome to Fire TV Edition - Use your remote to navigate
+                Fire TV Edition - Your Ultimate Streaming Experience
               </Text>
             </View>
             <Image
@@ -52,6 +108,7 @@ export const App = () => {
             isFocused={focusedTileId === tile.id}
             onFocus={() => setFocusedTileId(tile.id)}
             onBlur={() => {}}
+            onPress={() => handleTileSelect(tile.id)}
             testID={`tile-${tile.id}`}
             accessibilityLabel={tile.accessibilityLabel}
             hasTVPreferredFocus={tile.id === 'home'}
@@ -60,9 +117,20 @@ export const App = () => {
       </TVFocusGuideView>
     </ImageBackground>
   );
+
+  return (
+    <SafeAreaView style={styles.container}>
+      <StatusBar hidden />
+      {renderScreen()}
+    </SafeAreaView>
+  );
 };
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#000000',
+  },
   background: {
     flex: 1,
     paddingHorizontal: 64,
@@ -114,5 +182,21 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
+  },
+  placeholderScreen: {
+    flex: 1,
+    backgroundColor: '#141414',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  placeholderText: {
+    color: '#FFFFFF',
+    fontSize: 48,
+    fontWeight: 'bold',
+    marginBottom: 24,
+  },
+  placeholderSubtext: {
+    color: '#AAAAAA',
+    fontSize: 24,
   },
 });

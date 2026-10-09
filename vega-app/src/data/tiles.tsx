@@ -1,5 +1,5 @@
 import React from 'react';
-import {ImageSourcePropType, StyleSheet, Text} from 'react-native';
+import {ImageSourcePropType} from 'react-native';
 
 export interface TileData {
   id: string;
@@ -9,50 +9,52 @@ export interface TileData {
   icon: ImageSourcePropType;
 }
 
-const descStyles = StyleSheet.create({
-  bold: {
-    fontWeight: 'bold',
-  },
-});
-
 export const tiles: TileData[] = [
   {
     id: 'home',
     label: 'Home',
     accessibilityLabel: 'Home',
+    description: 'Browse trending movies and TV shows. Discover popular content and new releases.',
     icon: require('../assets/home.png'),
   },
   {
-    id: 'get-started',
-    label: 'Get\nstarted',
-    accessibilityLabel: 'Get started',
-    description: (
-      <>
-        Edit <Text style={descStyles.bold}>App.tsx</Text> for live changes.
-        {'\n'}Not seeing updates? Check Fast Refresh is enabled.
-      </>
-    ),
+    id: 'movies',
+    label: 'Movies',
+    accessibilityLabel: 'Movies',
+    description:
+      'Explore thousands of movies across all genres. From action blockbusters to indie classics.',
     icon: require('../assets/get-started.png'),
   },
   {
-    id: 'debug',
-    label: 'Test &\nDebug',
-    accessibilityLabel: 'Test and Debug',
+    id: 'tv-shows',
+    label: 'TV Shows',
+    accessibilityLabel: 'TV Shows',
     description:
-      "Press 'd' in the Metro terminal for the developer menu, or debug via Chrome Dev Tools in Vega Studio.",
+      'Watch your favorite TV series. Binge complete seasons or catch up on the latest episodes.',
+    icon: require('../assets/learn-more.png'),
+  },
+  {
+    id: 'search',
+    label: 'Search',
+    accessibilityLabel: 'Search',
+    description:
+      'Find any movie or TV show instantly. Search by title, actor, or genre.',
     icon: require('../assets/debug.png'),
   },
   {
-    id: 'learn-more',
-    label: 'Learn\nmore',
-    accessibilityLabel: 'Learn more',
-    description: (
-      <>
-        Read the docs at{' '}
-        <Text style={descStyles.bold}>developer.amazon.com</Text> or join the
-        community forums.
-      </>
-    ),
-    icon: require('../assets/learn-more.png'),
+    id: 'my-list',
+    label: 'My List',
+    accessibilityLabel: 'My List',
+    description:
+      'Access your saved movies and shows. Keep track of what you want to watch.',
+    icon: require('../assets/vega.png'),
+  },
+  {
+    id: 'settings',
+    label: 'Settings',
+    accessibilityLabel: 'Settings',
+    description:
+      'Customize your MovieBoxPro experience. Adjust playback, quality, and account settings.',
+    icon: require('../assets/debug.png'),
   },
 ];
