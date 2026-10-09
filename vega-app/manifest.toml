@@ -13,6 +13,10 @@ target = "1.2"
 [[needs.module]]
 id = "/com.amazon.vega.os@IVega_1_2"
 
+[[needs.module]]
+id = "/com.amazon.kepler.keplerscript_4@IKeplerScript_0"
+
+
 [components]
 [[components.interactive]]
 id = "com.movieboxpro.firetv.main"
